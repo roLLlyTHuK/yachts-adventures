@@ -3,7 +3,7 @@
     <div class="circle1"></div>
     <div class="circle2"></div>
     <h2>Choose your dream yacht and sail away into the sunset</h2>
-    <button type="button">Yacht Rental</button>
+    <button type="button" onclick="window.location.href='rentblock'">Yacht Rental</button>
     <div class="yacht-gallery">
       <div class="swiper">
         <!-- Additional required wrapper -->
@@ -11,7 +11,25 @@
           <!-- Slides -->
           <div class="swiper-slide">
             <div class="yacht-card">
-                <img src="" alt="" width="" />
+                <img
+                    src="./img/yahts/arrow.jpg"
+                    srcset="
+                        ./img/yahts/arrow_m.jpg   360w,
+                        ./img/yahts/arrow_m@x2.jpg  720w, 
+                        ./img/yahts/arrow_t.jpg   768w,
+                        ./img/yahts/arrow_t@x2.jpg 1536w, 
+                        ./img/yahts/arrow.jpg 1280w,
+                        ./img/yahts/arrow@x2.jpg 2560w
+                    "
+                    alt="Arrow yacht"
+                   sizes="
+                            (max-width: 767px) 360px,
+                            (max-width: 767px) 720px,
+                            (max-width: 1157px) 768px,
+                            (max-width: 1157px) 1536px,
+                            1158px
+                        "
+                />
                 <div class="title-yacht">
                   <p class="yacht-name">Arrow</p>
                   <p class="yacht-class">luxury yahts</p>
@@ -19,256 +37,274 @@
                 <table>
                   <tr>
                     <td>lenght</td>
-                    <td></td>
+                    <td>48m (155ft)</td>
                   </tr>
                   <tr>
                     <td>builder</td>
-                    <td></td>
+                    <td>Admiral</td>
                   </tr>
                   <tr>
-                    <td>built</td></td>
-                    <td></td>
+                    <td>built</td>
+                    <td>2021</td>
                   </tr>
                   <tr>
                     <td>guests</td>
-                    <td></td>
+                    <td>11 in 5 cabins</td>
                   </tr>
                   <tr>
                     <td>price</td>
-                    <td></td>
+                    <td>&euro;33,500,000</td>
                   </tr>
                 </table>
             </div>
           </div>
           <div class="swiper-slide"><div class="yacht-card">
-                <img src="" alt="" width="" />
+                <img
+                    src="./img/yahts/benetti.jpg"
+                    srcset="
+                        ./img/yahts/benetti_m.jpg   360w,
+                        ./img/yahts/benetti_m@x2.jpg  720w, 
+                        ./img/yahts/benetti_t.jpg   768w,
+                        ./img/yahts/benetti_t@x2.jpg 1536w, 
+                        ./img/yahts/benetti.jpg 1280w,
+                        ./img/yahts/benetti@x2.jpg 2560w
+                    "
+                    alt="benetti yacht"
+                   sizes="
+                            (max-width: 767px) 360px,
+                            (max-width: 767px) 720px,
+                            (max-width: 1157px) 768px,
+                            (max-width: 1157px) 1536px,
+                            1158px
+                        "
+    benetti
                 <div class="title-yacht">
-                  <p class="yacht-name"></p>
-                  <p class="yacht-class"></p>
+                  <p class="yacht-name">BENETTI OASIS 40M BO122</p>
+                  <p class="yacht-class">luxury yahts</p>
                 </div>
                 <table>
                   <tr>
                     <td>lenght</td>
-                    <td></td>
+                    <td>41m (133ft)</td>
                   </tr>
                   <tr>
-                    <td>builder</td>
-                    <td></td>
+                    <td>shipyard</td>
+                    <td>Benetti</td>
                   </tr>
                   <tr>
                     <td>built</td></td>
-                    <td></td>
+                    <td>2025</td>
                   </tr>
                   <tr>
                     <td>guests</td>
-                    <td></td>
+                    <td>10 in 5 cabins</td>
                   </tr>
                   <tr>
                     <td>price</td>
-                    <td></td>
+                    <td>&euro;23,210,000</td>
+                  </tr>
+                </table>
+            </div></div>
+          <div class="swiper-slide"><div class="yacht-card">
+                <img src="" alt="" width="" />
+            <div class="title-yacht">
+                  <p class="yacht-name">Belle Anna</p>
+                  <p class="yacht-class">luxury yahts</p>
+                </div>
+                <table>
+                  <tr>
+                    <td>lenght</td>
+                    <td>50m (155ft)</td>
+                  </tr>
+                  <tr>
+                    <td>shipyard</td>
+                    <td>ISA</td>
+                  </tr>
+                  <tr>
+                    <td>built</td>
+                    <td>2012</td>
+                  </tr>
+                  <tr>
+                    <td>guests</td>
+                    <td>12 in 6 cabins</td>
+                  </tr>
+                  <tr>
+                    <td>price</td>
+                    <td>&euro;21,000,000</td>
                   </tr>
                 </table>
             </div></div>
           <div class="swiper-slide"><div class="yacht-card">
                 <img src="" alt="" width="" />
                 <div class="title-yacht">
-                  <p class="yacht-name"></p>
-                  <p class="yacht-class"></p>
+                  <p class="yacht-name">Ellen</p>
+                  <p class="yacht-class">luxury yahts</p>
                 </div>
                 <table>
                   <tr>
                     <td>lenght</td>
-                    <td></td>
+                    <td>40m (132ft)</td>
                   </tr>
                   <tr>
-                    <td>builder</td>
-                    <td></td>
+                    <td>shipyard</td>
+                    <td>Perini Navi</td>
                   </tr>
                   <tr>
-                    <td>built</td></td>
-                    <td></td>
+                    <td>built</td>
+                    <td>2001/2016 (refitted)</td>
                   </tr>
                   <tr>
                     <td>guests</td>
-                    <td></td>
+                    <td>9 in 4 cabins</td>
                   </tr>
                   <tr>
                     <td>price</td>
-                    <td></td>
+                    <td>&euro;9,300,000</td>
                   </tr>
                 </table>
             </div></div>
           <div class="swiper-slide"><div class="yacht-card">
                 <img src="" alt="" width="" />
                 <div class="title-yacht">
-                  <p class="yacht-name"></p>
-                  <p class="yacht-class"></p>
+                  <p class="yacht-name">Mirage 401</p>
+                  <p class="yacht-class">luxury yahts</p>
                 </div>
                 <table>
                   <tr>
                     <td>lenght</td>
-                    <td></td>
+                    <td>38m (125ft)</td>
                   </tr>
                   <tr>
-                    <td>builder</td>
-                    <td></td>
+                    <td>shipyard</td>
+                    <td>Gianetti Custom Yachts</td>
                   </tr>
                   <tr>
-                    <td>built</td></td>
-                    <td></td>
+                    <td>built</td>
+                    <td>2024</td>
                   </tr>
                   <tr>
                     <td>guests</td>
-                    <td></td>
+                    <td>10 in 5 cabins</td>
                   </tr>
                   <tr>
                     <td>price</td>
-                    <td></td>
+                    <td>&euro;13,500,000</td>
                   </tr>
                 </table>
             </div></div>
           <div class="swiper-slide"><div class="yacht-card">
                 <img src="" alt="" width="" />
                 <div class="title-yacht">
-                  <p class="yacht-name"></p>
-                  <p class="yacht-class"></p>
+                  <p class="yacht-name">KING</p>
+                  <p class="yacht-class">luxury yahts</p>
                 </div>
                 <table>
                   <tr>
                     <td>lenght</td>
-                    <td></td>
+                    <td>33m (109ft)</td>
                   </tr>
                   <tr>
-                    <td>builder</td>
-                    <td></td>
+                    <td>shipyard</td>
+                    <td>Overmarine</td>
                   </tr>
                   <tr>
-                    <td>built</td></td>
-                    <td></td>
+                    <td>built</td>
+                    <td>2004 / 2018 (refitted)</td>
                   </tr>
                   <tr>
                     <td>guests</td>
-                    <td></td>
+                    <td>9 in 4 cabins</td>
                   </tr>
                   <tr>
                     <td>price</td>
-                    <td></td>
+                    <td>&euro;1,850,000</td>
                   </tr>
                 </table>
             </div></div>
           <div class="swiper-slide"><div class="yacht-card">
                 <img src="" alt="" width="" />
                 <div class="title-yacht">
-                  <p class="yacht-name"></p>
-                  <p class="yacht-class"></p>
+                  <p class="yacht-name">SALT</p>
+                  <p class="yacht-class">luxury yahts</p>
                 </div>
                 <table>
                   <tr>
                     <td>lenght</td>
-                    <td></td>
+                    <td>32m (105ft)</td>
                   </tr>
                   <tr>
                     <td>builder</td>
-                    <td></td>
+                    <td>SanLorenzo</td>
                   </tr>
                   <tr>
-                    <td>built</td></td>
-                    <td></td>
+                    <td>built</td>
+                    <td>2019</td>
                   </tr>
                   <tr>
                     <td>guests</td>
-                    <td></td>
+                    <td>11 in 5 cabins</td>
                   </tr>
                   <tr>
                     <td>price</td>
-                    <td></td>
+                    <td>&euro;7,800,000</td>
                   </tr>
                 </table>
             </div></div>
           <div class="swiper-slide"><div class="yacht-card">
                 <img src="" alt="" width="" />
                 <div class="title-yacht">
-                  <p class="yacht-name"></p>
-                  <p class="yacht-class"></p>
+                  <p class="yacht-name">STORM</p>
+                  <p class="yacht-class">luxury yahts</p>
                 </div>
                 <table>
                   <tr>
                     <td>lenght</td>
-                    <td></td>
+                    <td>32m (103ft)</td>
                   </tr>
                   <tr>
-                    <td>builder</td>
-                    <td></td>
+                    <td>shipyard</td>
+                    <td>Overmarine</td>
                   </tr>
                   <tr>
-                    <td>built</td></td>
-                    <td></td>
+                    <td>built</td>
+                    <td>2005 / 2022 (refitted)</td>
                   </tr>
                   <tr>
                     <td>guests</td>
-                    <td></td>
+                    <td>9 in 4 cabins</td>
                   </tr>
                   <tr>
                     <td>price</td>
-                    <td></td>
+                    <td>&euro;2,900,000</td>
                   </tr>
                 </table>
             </div></div>
           <div class="swiper-slide"><div class="yacht-card">
                 <img src="" alt="" width="" />
                 <div class="title-yacht">
-                  <p class="yacht-name"></p>
-                  <p class="yacht-class"></p>
+                  <p class="yacht-name">COLLU</p>
+                  <p class="yacht-class">luxury yahts</p>
                 </div>
                 <table>
                   <tr>
                     <td>lenght</td>
-                    <td></td>
+                    <td>29m (96ft)</td>
                   </tr>
                   <tr>
-                    <td>builder</td>
-                    <td></td>
+                    <td>shipyard</td>
+                    <td>Ferretti</td>
                   </tr>
                   <tr>
-                    <td>built</td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>guests</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>price</td>
-                    <td></td>
-                  </tr>
-                </table>
-            </div></div>
-          <div class="swiper-slide"><div class="yacht-card">
-                <img src="" alt="" width="" />
-                <div class="title-yacht">
-                  <p class="yacht-name"></p>
-                  <p class="yacht-class"></p>
-                </div>
-                <table>
-                  <tr>
-                    <td>lenght</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>builder</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>built</td></td>
-                    <td></td>
+                    <td>built</td>
+                    <td>2014</td>
                   </tr>
                   <tr>
                     <td>guests</td>
-                    <td></td>
+                    <td>10 in 5 cabins</td>
                   </tr>
                   <tr>
                     <td>price</td>
-                    <td></td>
+                    <td>&dollar;4,300,000</td>
                   </tr>
                 </table>
             </div></div>

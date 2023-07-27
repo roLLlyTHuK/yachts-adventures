@@ -7,7 +7,7 @@
 
 .box {
   display: flex;
-
+  gap: 436px;
 }
 
 .container {}
@@ -19,13 +19,13 @@
   |============================
 */
 .hero-photos {
-  /* position: relative; */
+  position: relative;
 }
 
 .box-background {
 
 
-  width: 460px;
+  width: 462px;
   top: 64px;
   left: 32px;
   background-repeat: no-repeat;
@@ -33,15 +33,56 @@
   position: absolute;
 }
 
-.box-cut {
+.box-yacht {
   top: 289px;
-  left: 42px;
+  left: 70px;
   width: 374px;
   height: 221px;
+  z-index: -4;
   position: absolute;
 }
 
-.box-yacht {}
+
+.box-boss {
+  top: 96px;
+  left: 360px;
+  width: 232px;
+  z-index: -3;
+  position: absolute;
+}
+
+.cost {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  width: 362px;
+  top: 532px;
+  left: 90px;
+  position: absolute;
+}
+
+
+
+.cost-price {
+  color: #11131F;
+  font-size: 60px;
+  font-weight: 400;
+
+  letter-spacing: -2.7px;
+  text-transform: uppercase;
+}
+
+
+
+.cost-stroke {
+  color: #11131F;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -0.81px;
+}
+
+
 
 
 /**
@@ -55,6 +96,8 @@
   margin-left: 236px;
   margin-top: 132px;
   margin-bottom: 244px;
+  width: 554px;
+  height: 360px;
 }
 
 .hero-title {

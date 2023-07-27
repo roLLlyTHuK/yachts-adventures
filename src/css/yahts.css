@@ -1,15 +1,21 @@
+.yacht-gallery {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
 .yacht-card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  gap: 32px;
   width: 354px;
   height: 508px;
   padding: 16px 16px 32px;
   border: 1px solid #000;
-  background: #1f212d;
-  /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
+  border-radius: 24px;
+  background: rgba(31, 33, 45, 0.5);
 }
-.yacht-img {
+.yacht-card > img {
   width: 322px;
   height: 268px;
   border-radius: 24px;
@@ -18,4 +24,19 @@
 .title-yacht {
   display: flex;
   justify-content: space-between;
+  text-transform: uppercase;
+}
+.yacht-name {
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  width: 177px;
+  height: 19px;
+  overflow: hidden;
+}
+.yacht-class {
+  opacity: 0.5;
+}
+.yachts-box > table {
+  width: 178px;
 }

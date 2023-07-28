@@ -37,8 +37,23 @@
   flex-direction: column;
   gap: 24px;
 }
+@media only screen and (min-width: 768px) {
+  .services-list {
+    gap: 32px;
+  }
+}
 
 .services-item {
+}
+@media only screen and (min-width: 768px) {
+  .services-item.item2 {
+    width: 400px;
+    align-self: flex-end;
+  }
+  .services-item.item3 {
+    width: 380px;
+    margin-left: 32px;
+  }
 }
 
 .services-link {

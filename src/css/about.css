@@ -27,13 +27,14 @@
 }
 @media only screen and (min-width: 768px) {
   .about-text {
-    min-width: 514px;
+    min-width: 470px;
     color: var(--white, #f6f5ef);
     font-size: 32px;
     font-style: normal;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: -0.045em;
+    padding-bottom: 32px;
   }
 }
 
@@ -75,6 +76,13 @@
   gap: 14px;
   padding-bottom: 40px;
 }
+@media only screen and (min-width: 768px) {
+  .about-description-list {
+    gap: 32px;
+    padding-bottom: 64px;
+    margin-left: auto;
+  }
+}
 
 .about-description-item {
   align-items: flex-start;
@@ -87,7 +95,18 @@
   font-style: normal;
   font-weight: 400;
   line-height: 1.4;
-  letter-spacing: -0.02;
+  letter-spacing: -0.02em;
+}
+@media only screen and (min-width: 768px) {
+  .about-description-text {
+    width: 183px;
+    color: var(--white, #f6f5ef);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+  }
 }
 
 .about-picture-list {

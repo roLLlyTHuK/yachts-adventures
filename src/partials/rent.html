@@ -1,1 +1,64 @@
-<p class="rent">rent</p>
+<!-- Rent Section -->
+<section id="rent">
+    <div class="container rent-container">
+
+    <h2 class="rent-txt">Rent a yacht now</h2>
+    <div class="rent-card">
+        <img src="../img/rent/rentyaht.png" alt="Yaht image" />
+    </div>
+
+    <!-- Rent Form -->
+<form id="formRent" onsubmit="event.preventDefault(); validateForm();">
+    <div class="container form-container">
+    <div class="form-name">
+    <input type="text" id="name" required pattern="[A-Za-zА-Яа-яЁёІіЇїЄєҐґ\s]+" placeholder="Full Name" /><br />
+    </div>
+    <div class="form-name">
+    <input type="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+        placeholder="Email" /><br />
+    </div>
+    <div class="form-name">
+    <input type="tel" id="phone" required pattern="[0-9]{10}" placeholder="Phone number" /><br />
+    </div>
+    <div class="form-name">
+        <input type="text" id="user-comment" required pattern="[A-Za-zА-Яа-яЁёІіЇїЄєҐґ\s]+" placeholder="Comment" /><br />
+    </div>
+    <div class="rent-btn">
+    <button type="submit">Send</button>
+    </div>
+</div>
+</form>
+
+<!-- Rent Modal -->
+<div id="myModal" class="rent-modal">
+    <div class="rent-modal-content">
+        <button type="rent-button" data-modal-close class="close-rent-button">
+            <svg width="8" height="8" class="rent-button-icon">
+                <use href="../img/icons.svg#close"></use>
+            </svg>
+        </button>
+        <img src="../img/rent/rentmodal.png" alt="Yaht modal window" class="rent-modal-image" />
+        <h2>Thank you</h2>
+        <p>Thank you for choosing Yacht Adventures, your booking details have been received and our team will be in touch shortly
+        to confirm your reservation and provide any additional information or assistance you may need.</p>
+    </div>
+</div>
+
+<script>
+    function validateForm() {
+        const form = document.getElementById("myForm");
+        if (form.checkValidity()) {
+            openModal();
+        } else {
+            form.reportValidity();
+        }
+    }
+
+    function openModal() {
+        const modal = document.getElementById("myModal");
+        modal.style.display = "block";
+    }
+</script>
+
+</div>
+</section>

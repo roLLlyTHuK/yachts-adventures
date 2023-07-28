@@ -11,7 +11,7 @@
   background: #91afba;
   filter: blur(100px);
   border-radius: 50%;
-  z-index: -1;
+  z-index: 1;
 }
 .circle1 {
   left: 0;
@@ -43,6 +43,7 @@
   letter-spacing: -4.5px;
   word-wrap: break-word;
   margin-bottom: 64px;
+  z-index: 5;
 }
 .yacht-title-box a {
   all: unset;

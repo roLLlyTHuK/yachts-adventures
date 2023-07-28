@@ -1,3 +1,318 @@
 .hero {
-  background-color: turquoise;
+  /* background-color: turquoise; */
+  /* background-color: #11131f;
+  z-index: -10; */
 }
+
+
+@media screen and (min-width: 320px) and (max-width: 375px) {}
+
+@media screen and (min-width: 376px) and (max-width: 768px) {}
+
+@media screen and (min-width: 769px) {}
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 1158px) {}
+
+
+/* @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          .hero {
+            background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg/bg_pc@2x.jpg);
+            background-size: cover;
+          } */
+
+.box {
+  display: flex;
+  gap: 436px;
+}
+
+
+/**
+  |============================
+  |  Photos
+  |============================
+*/
+
+.hero-photos {
+  position: relative;
+}
+
+.box-background {
+
+  width: 462px;
+  height: 598px;
+  top: 64px;
+  left: 32px;
+  background-repeat: no-repeat;
+  z-index: -6;
+  position: absolute;
+}
+
+/* Boss & Yacht photos block  */
+
+.box-client1 {
+  width: 56px;
+  top: 96px;
+  left: 90px;
+  z-index: -1;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box-client2 {
+  width: 56px;
+  top: 96px;
+  left: 133px;
+  z-index: -2;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box-client3 {
+  width: 56px;
+  top: 96px;
+  left: 176px;
+  z-index: -3;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.our-clients {
+  min-width: 96px;
+  color: #11131F;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.56px;
+  text-transform: uppercase;
+  position: absolute;
+
+  width: 56px;
+  top: 163px;
+  left: 90px;
+
+  z-index: 2;
+}
+
+
+/* Boss & Yacht photos block  */
+
+.box-yacht {
+  top: 289px;
+  left: 70px;
+  width: 374px;
+  height: 221px;
+  z-index: -5;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box-boss {
+  top: 96px;
+  left: 360px;
+  width: 232px;
+  z-index: -4;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* stroke-width: 1px;
+  stroke: rgba(246, 245, 239, 0.20); */
+}
+
+.cost {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  width: 362px;
+  top: 532px;
+  left: 90px;
+  position: absolute;
+}
+
+
+.cost-price {
+  color: #11131F;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: -2.7px;
+  text-transform: uppercase;
+}
+
+.cost-strong {
+  color: #11131F;
+  font-size: 18px;
+  letter-spacing: -0.81px;
+  line-height: 110%;
+
+}
+
+
+/**
+  |============================
+  |  Hero subscribe
+  |============================
+*/
+
+
+.hero-sibscribe-container {
+  margin-left: 236px;
+  margin-top: 132px;
+  margin-bottom: 244px;
+  width: 554px;
+  height: 360px;
+}
+
+.hero-title {
+
+  font-size: 60px;
+  font-weight: 500;
+  letter-spacing: -2.7px;
+  max-width: 490px;
+  line-height: 110%;
+  letter-spacing: -2.7px;
+
+}
+
+.hero-title-grey {
+  font-family: DMSans-Italic-tp;
+  background: linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 60px;
+  font-weight: 500;
+  letter-spacing: -2.7px;
+
+}
+
+.hero-item {
+  /* all: unset; */
+  width: 539px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.32px;
+  margin-top: 16px;
+  margin-bottom: 32px;
+
+
+  /* line-height: 140%;
+  letter-spacing: -0.32px; */
+}
+
+.hero-buttons-container {
+  display: flex;
+  gap: 11px;
+  align-items: center;
+  color: #F6F5EF;
+
+}
+
+.hero-btn-get {
+  /* color: unset; */
+  padding: 14px 28px;
+  border-radius: 60px;
+  width: auto;
+  height: 48px;
+  font-size: 18px;
+  letter-spacing: -0.81px;
+  background: var(--light-green, #93ABAE);
+  font-weight: 700;
+  line-height: 110%;
+  color: var(--white, #F6F5EF);
+
+}
+
+.hero-btn-explore {
+  /* color: unset; */
+  padding: 14px 28px;
+  width: 117px;
+  height: 48px;
+  font-size: 18px;
+  border-radius: 60px;
+  font-weight: 700;
+  line-height: 110%;
+  border: 1px solid var(--white, #F6F5EF);
+
+}
+
+.hero-btn-get:hover,
+.hero-btn-get:focus {
+  background-color: #88B3B9;
+}
+
+.hero-btn-explore:hover,
+.hero-btn-explore:focus {
+  color: var(--light-green);
+}
+
+
+/**
+  |============================
+  | Example for the Photos position
+  |============================
+*/
+
+/* .hero-photos {
+  background: url(../img/hero/background_grey@1x.png) center/cover no-repeat;
+  height: 100vh;
+}
+
+.hero-photos:before {
+  content: '';
+  position: absolute;
+  background: url(../img/hero/background_cut@1x.png) center/cover no-repeat;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: screen;
+} */
+
+
+/**
+  |============================
+  | Media
+  |============================
+*/
+
+/* .section {
+  padding: 40px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .section {
+    padding: 50px 0;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .section {
+    padding: 82px 0;
+  }
+}
+
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+} */

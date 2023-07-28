@@ -1,38 +1,35 @@
 <!-- Rent Section -->
 <section id="rent">
     <div class="container rent-container">
-
-    <h2 class="rent-txt">Rent a yacht now</h2>
-    <div class="rent-card">
-        <img src="../img/rent/rentyaht.png" alt="Yaht image" />
+        <h2 class="rent-txt">Rent a yacht now</h2>
+        <div class="rent-image-container">
+            <img src="../img/rent/rentyaht.png" alt="Yaht">
+        </div>
+        <form id="contactForm">
+            <div class="rent-form-row">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div class="rent-form-row">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="rent-form-row">
+                <label for="phoneNumber">Phone number</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required>
+            </div>
+            <div class="rent-form-row">
+                <label for="comment">Comment</label>
+                <textarea id="comment" name="comment" rows="4" required></textarea>
+            </div>
+            <button class="rent-btn rent-button-flex" type="submit" data-modal-open>Send</button>
+        </form>
     </div>
-
-    <!-- Rent Form -->
-<form id="formRent" onsubmit="event.preventDefault(); validateForm();">
-    <div class="container form-container">
-    <div class="form-name">
-    <input type="text" id="name" required pattern="[A-Za-zА-Яа-яЁёІіЇїЄєҐґ\s]+" placeholder="Full Name" /><br />
-    </div>
-    <div class="form-name">
-    <input type="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-        placeholder="Email" /><br />
-    </div>
-    <div class="form-name">
-    <input type="tel" id="phone" required pattern="[0-9]{10}" placeholder="Phone number" /><br />
-    </div>
-    <div class="form-name">
-        <input type="text" id="user-comment" required pattern="[A-Za-zА-Яа-яЁёІіЇїЄєҐґ\s]+" placeholder="Comment" /><br />
-    </div>
-    <div class="rent-btn">
-    <button type="submit">Send</button>
-    </div>
-</div>
-</form>
 
 <!-- Rent Modal -->
 <div id="myModal" class="rent-modal">
     <div class="rent-modal-content">
-        <button type="rent-button" data-modal-close class="close-rent-button">
+        <button type="button" data-modal-close class="close-rent-button">
             <svg width="8" height="8" class="rent-button-icon">
                 <use href="../img/icons.svg#close"></use>
             </svg>
@@ -43,22 +40,6 @@
         to confirm your reservation and provide any additional information or assistance you may need.</p>
     </div>
 </div>
-
-<script>
-    function validateForm() {
-        const form = document.getElementById("myForm");
-        if (form.checkValidity()) {
-            openModal();
-        } else {
-            form.reportValidity();
-        }
-    }
-
-    function openModal() {
-        const modal = document.getElementById("myModal");
-        modal.style.display = "block";
-    }
-</script>
-
 </div>
+
 </section>

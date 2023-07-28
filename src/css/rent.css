@@ -1,16 +1,14 @@
-.rent {
-  
-}
+
 .rent-container{
   display: inline-flex;
     justify-content: center;
     align-items: flex-end;
     gap: 188px;
-    margin-bottom: 164px;
+    margin-top: 164px;
 }
 .rent-txt{
-  color: var(--white, #F6F5EF);
   width: 282px;
+  color: var(--white, #F6F5EF);
     font-family: DM Sans;
     font-size: 60px;
     font-style: normal;
@@ -19,9 +17,14 @@
     /* 66px */
     letter-spacing: -2.7px;
 }
+.rent-image-container{
+  width: 282px;
+    height: 191px;
+    fill: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
 
 /* Rent Form */
-.form-container{
+.rent-form-row{
   display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -36,14 +39,24 @@
     line-height: 120%;
     /* 19.2px */
     letter-spacing: -0.72px;
+
+    display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
 }
 .rent-btn{
-  display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 64px;
+  background-color: transparent;
+  color: #fff;
+display: flex;
+  padding: 14px 28px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 60px;
+    border: 1px solid var(--white, #F6F5EF);
 }
+
 
 /* Rent Modal */
 .overlay {

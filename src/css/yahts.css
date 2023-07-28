@@ -11,7 +11,7 @@
   background: #91afba;
   filter: blur(100px);
   border-radius: 50%;
-  z-index: 1;
+  z-index: 5;
 }
 .circle1 {
   left: 0;
@@ -43,7 +43,7 @@
   letter-spacing: -4.5px;
   word-wrap: break-word;
   margin-bottom: 64px;
-  z-index: 5;
+  z-index: 10;
 }
 .yacht-title-box a {
   all: unset;
@@ -61,15 +61,38 @@
 }
 .vectors {
   position: absolute;
-  top: 0;
-  left: 0;
-  /* stroke: #f6f5ef;
-  stroke-width: 1.5; */
-  transform: rotate(7.506deg);
-  z-index: 10;
+  top: 140px;
+  left: -20px;
+  width: 1509px;
+  height: 1611px;
+  opacity: 0.1;
+  /* transform: rotate(101.767deg); не потрібно бо в пнг вже є цей кут*/
 }
 .yacht-gallery .swiper {
   width: 85%;
+}
+
+.btn-prev,
+.btn-next {
+  position: absolute;
+  bottom: 254px;
+  display: flex;
+  width: 50px;
+  height: 37px;
+  padding: 14px 16px;
+  background: transparent;
+  align-items: center;
+  border-radius: 60px;
+  border: 1px solid var(--white, #f6f5ef);
+  z-index: 10;
+  cursor: pointer;
+  color: var(--white, #f6f5ef);
+}
+.btn-prev {
+  left: 32px;
+}
+.btn-next {
+  right: 32px;
 }
 .yacht-card {
   display: flex;

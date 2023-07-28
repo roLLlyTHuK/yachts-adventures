@@ -1,7 +1,7 @@
 const swiper = new Swiper('.swiper', {
   
   slidesPerView: 1,
-  spaceBetween: 16,
+  spaceBetween: 1,
   // Responsive breakpoints
   breakpoints: {
     0: {
@@ -39,8 +39,8 @@ const swiper = new Swiper('.swiper', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: ('.swiper-button-next', '.btn-next'),
+    prevEl: ('.swiper-button-prev', '.btn-prev')
   },
 
   // And if we need scrollbar

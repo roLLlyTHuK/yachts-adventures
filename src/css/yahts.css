@@ -1,7 +1,98 @@
-.yacht-gallery {
+.yachts-box {
+  position: relative;
+}
+.yachts-top-box {
+  position: relative;
+}
+.circle1,
+.circle2 {
+  position: absolute;
+  top: 0;
+  background: #91afba;
+  filter: blur(100px);
+  border-radius: 50%;
+  z-index: 5;
+}
+.circle1 {
+  left: 0;
+  width: 414px;
+  height: 414px;
+  opacity: 0.6;
+  transform: translate(55%, -20%);
+}
+.circle2 {
+  right: 0;
+  opacity: 0.3;
+  width: 316px;
+  height: 316px;
+  transform: translate(-100%, -20%);
+}
+.yacht-title-box {
   display: flex;
-  flex-direction: row;
-  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 164px;
+}
+.yacht-title-box h2 {
+  font-family: DM Sans;
+  font-size: 100px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -4.5px;
+  word-wrap: break-word;
+  margin-bottom: 64px;
+  z-index: 10;
+}
+.yacht-title-box a {
+  all: unset;
+  width: 153px;
+  padding: 14px 28px;
+  border: 1px solid #f6f5ef;
+  border-radius: 60px;
+  background-color: transparent;
+  color: #f6f5ef;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.81px;
+  text-align: center;
+}
+.vectors {
+  position: absolute;
+  top: 140px;
+  left: -20px;
+  width: 1509px;
+  height: 1611px;
+  opacity: 0.1;
+  /* transform: rotate(101.767deg); не потрібно бо в пнг вже є цей кут*/
+}
+.yacht-gallery .swiper {
+  width: 85%;
+}
+
+.btn-prev,
+.btn-next {
+  position: absolute;
+  bottom: 254px;
+  display: flex;
+  width: 50px;
+  height: 37px;
+  padding: 14px 16px;
+  background: transparent;
+  align-items: center;
+  border-radius: 60px;
+  border: 1px solid var(--white, #f6f5ef);
+  z-index: 10;
+  cursor: pointer;
+  color: var(--white, #f6f5ef);
+}
+.btn-prev {
+  left: 32px;
+}
+.btn-next {
+  right: 32px;
 }
 .yacht-card {
   display: flex;
@@ -12,13 +103,14 @@
   height: 508px;
   padding: 16px 16px 32px;
   border: 1px solid #000;
-  border-radius: 24px;
+  border-radius: 8%;
   background: rgba(31, 33, 45, 0.5);
 }
+
 .yacht-card > img {
-  width: 322px;
-  height: 268px;
-  border-radius: 24px;
+  display: block;
+  width: 100%;
+  border-radius: 26px;
   overflow: hidden;
 }
 .title-yacht {

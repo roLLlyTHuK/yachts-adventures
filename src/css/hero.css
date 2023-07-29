@@ -27,6 +27,11 @@
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
 
+  .hero-photos {
+
+    padding-bottom: 660px;
+  }
+
   .box {
 
     display: flex;
@@ -78,6 +83,7 @@
 
 @media only screen and (min-width: 1280px) {
 
+
   .box {
     display: flex;
     gap: 436px;
@@ -86,8 +92,14 @@
   .hero-sibscribe-container {
     margin-left: 236px;
     margin-top: 132px;
-    margin-bottom: 244px;
+    margin-bottom: auto;
     width: 554px;
+
+  }
+
+  .hero {
+
+    margin-bottom: 82px;
 
   }
 
@@ -428,7 +440,7 @@
     position: relative;
     margin-left: -32px;
 
-    /* padding-bottom: 480px; */
+    padding-bottom: 480px;
 
   }
 

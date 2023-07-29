@@ -15,6 +15,7 @@
 @import url('./footer.css');
 @import url('./modal.css');
 @import url('./mobile-menu.css');
+@import url('./button-to-top.css');
 
 :root {
   /* Colors */
@@ -34,6 +35,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+body {
+  position: relative;
+}
+
+button {
+  outline: none;
+  color: currentColor;
 }
 
 @font-face {

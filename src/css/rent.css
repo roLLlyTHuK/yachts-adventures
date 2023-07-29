@@ -1,21 +1,38 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container-r{
+  margin-bottom: 164px;
+}
 
 .rent-container{
-  display: inline-flex;
-    justify-content: center;
-    align-items: flex-end;
-    gap: 188px;
-    margin-top: 164px;
+
+    display: inline-flex;
+      justify-content: center;
+      align-items: flex-end;
+      gap: 188px;
+    
+}
+.img-box{
+  display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 64px;
+    
 }
 .rent-txt{
+color: #F6F5EF;
   width: 282px;
-  color: var(--white, #F6F5EF);
-    font-family: DM Sans;
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 110%;
-    /* 66px */
-    letter-spacing: -2.7px;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  /* 66px */
+  letter-spacing: -2.7px;
+  margin-bottom: 64px;
 }
 .rent-image-container{
   width: 282px;
@@ -24,87 +41,102 @@
 }
 
 /* Rent Form */
-.rent-form-row{
+ ::placeholder {
+   color: white;
+ }
+.rent-form{
   display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 20px;
+}
+.form-box{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     gap: 28px;
 }
-.form-name{
-  color: var(--white, #F6F5EF);
-    font-family: DM Sans;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 120%;
-    /* 19.2px */
-    letter-spacing: -0.72px;
+.rent-form-row{
+  
+display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: transparent;
+  position: relative;
 
-    display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 16px;
+    
 }
+.rent-form-row input,
+.rent-form-row textarea {
+  width: 443px;
+  padding: 8px;
+  border: none;
+  /*  границі */
+  border-radius: 4px;
+  background-color: transparent;
+  
+  
+}
+.rent-form-row::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 443px;
+  height: 1px;
+  background-color: #ccc;
+}
+
 .rent-btn{
   background-color: transparent;
   color: #fff;
-display: flex;
+  display: flex;
+  margin-top: 64px;
   padding: 14px 28px;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   gap: 16px;
   border-radius: 60px;
-    border: 1px solid var(--white, #F6F5EF);
+  border: 1px solid  #F6F5EF;
+}
+.rent-btn:hover {
+  border: none;
+  color: #93ABAE;
+  border: 1px solid #93ABAE;
+
 }
 
-
-/* Rent Modal */
-.overlay {
-  opacity: 0;
-  visibility: hidden;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 20;
-  transition: 0.3s all;
+/* Стилі для мобільних пристроїв і екранів з шириною від 0 до 375px */
+@media (max-width: 375px) {
+  .rent-image-container img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
-.rent-modal {
-  opacity: 0;
-  visibility: hidden;
-  width: 100%;
-  max-width: 500px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 30;
-  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  padding: 30px;
-  border-radius: 3px;
-  background-color: #fff;
-  transition: 0.3s all;
+/* Стилі для планшетів і екранів з шириною від 768px до 1279px */
+@media (min-width: 768px) and (max-width: 1279px) {
+  .rent-image-container img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
+/* Стилі для десктопних пристроїв з шириною екрану від 1280px і більше */
+@media (min-width: 1280px) {
+  .rent-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.rent-modal.active,
-.overlay.active {
-  opacity: 1;
-  visibility: visible;
-}
+  .rent-image-container {
+    flex: 1;
+  }
 
-
-.modal__cross {
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  fill: #444;
-  cursor: pointer;
+  .rent-txt {
+    font-size: 2rem;
+  }
 }

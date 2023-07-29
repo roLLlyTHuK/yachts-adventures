@@ -75,18 +75,12 @@ display: flex;
   /*  границі */
   border-radius: 4px;
   background-color: transparent;
-  
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
   
 }
-.rent-form-row::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 443px;
-  height: 1px;
-  background-color: #ccc;
-}
+
 
 .rent-btn{
   background-color: transparent;

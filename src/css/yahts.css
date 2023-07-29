@@ -1,6 +1,4 @@
-.yachts-box {
-  position: relative;
-}
+/*============================|top side|===========================*/
 .yachts-top-box {
   position: relative;
 }
@@ -27,6 +25,16 @@
   height: 316px;
   transform: translate(-100%, -20%);
 }
+.vectors {
+  position: absolute;
+  top: 140px;
+  left: -20px;
+  width: 1509px;
+  height: 1611px;
+  opacity: 0.1;
+  z-index: -1;
+  /* transform: rotate(101.767deg); не потрібно бо в пнг вже є цей кут*/
+}
 .yacht-title-box {
   display: flex;
   flex-direction: column;
@@ -45,7 +53,7 @@
   margin-bottom: 64px;
   z-index: 10;
 }
-.yacht-title-box a {
+.yacht-rent-btn {
   all: unset;
   width: 153px;
   padding: 14px 28px;
@@ -58,24 +66,35 @@
   line-height: 1.1;
   letter-spacing: -0.81px;
   text-align: center;
+  cursor: pointer;
 }
-.vectors {
-  position: absolute;
-  top: 140px;
-  left: -20px;
-  width: 1509px;
-  height: 1611px;
-  opacity: 0.1;
-  /* transform: rotate(101.767deg); не потрібно бо в пнг вже є цей кут*/
+.yacht-rent-btn:hover,
+.yacht-rent-btn:focus {
+  color: #93abae;
+  border: 1px solid #93abae;
+}
+
+.yacht-gallery {
+  position: relative;
 }
 .yacht-gallery .swiper {
   width: 85%;
 }
-
+.gallery-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1216px;
+  padding: 0;
+  margin: 0;
+  z-index: 10;
+}
 .btn-prev,
 .btn-next {
-  position: absolute;
-  bottom: 254px;
   display: flex;
   width: 50px;
   height: 37px;
@@ -84,34 +103,29 @@
   align-items: center;
   border-radius: 60px;
   border: 1px solid var(--white, #f6f5ef);
-  z-index: 10;
   cursor: pointer;
   color: var(--white, #f6f5ef);
 }
-.btn-prev {
-  left: 32px;
-}
-.btn-next {
-  right: 32px;
+.btn-prev:hover,
+.btn-prev:focus,
+.btn-next:hover,
+.btn-next:focus {
+  color: #93abae;
+  border: 1px solid #93abae;
 }
 .yacht-card {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 32px;
-  width: 354px;
-  height: 508px;
   padding: 16px 16px 32px;
-  border: 1px solid #000;
   border-radius: 8%;
-  background: rgba(31, 33, 45, 0.5);
+  background-color: rgba(31, 33, 45, 0.5);
 }
-
 .yacht-card > img {
   display: block;
   width: 100%;
   border-radius: 26px;
-  overflow: hidden;
 }
 .title-yacht {
   display: flex;
@@ -129,6 +143,15 @@
 .yacht-class {
   opacity: 0.5;
 }
-.yachts-box > table {
-  width: 178px;
+.yacht-card-tab tr td:nth-child(1) {
+  text-transform: uppercase;
+}
+/*============================|adoptation|===========================*/
+@media only screen and (min-width: 768px) {
+   {
+  }
+}
+@media only screen and (min-width: 1280px) {
+   {
+  }
 }

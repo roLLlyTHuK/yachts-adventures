@@ -2,11 +2,11 @@
   background-color: turquoise;
 }
 
-.services {
-}
+/* .services {
+} */
 
-.services-container {
-}
+/* .services-container {
+} */
 
 .services-list {
   display: flex;
@@ -26,8 +26,8 @@
   }
 }
 
-.services-item {
-}
+/* .services-item {
+} */
 @media only screen and (min-width: 768px) {
   .services-item.item2 {
     width: 400px;
@@ -51,8 +51,8 @@
   }
 }
 
-.services-link {
-}
+/* .services-link {
+} */
 
 .services-picture {
   border-radius: 40px;
@@ -81,7 +81,7 @@
   color: var(--dark-blue);
   font-size: 14px;
   line-height: 110%;
-  letter-spacing: -0.045;
+  letter-spacing: -0.045em;
 }
 
 @media only screen and (min-width: 768px) {

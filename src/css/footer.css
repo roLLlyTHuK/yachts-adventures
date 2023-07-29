@@ -4,6 +4,7 @@
   |============================
 */
 .footer {
+  overflow: hidden;
 }
 
 .footer-container.container {
@@ -44,12 +45,13 @@
   gap: 8px;
 }
 
-.logo-svg {
-  fill: rgb(211, 220, 220);
+.logo-img {
+  width: 18px;
+  height: 18px;
 }
 @media only screen and (min-width: 768px) {
-  .logo-svg {
-    width: 20px;
+  .logo-img {
+    width: 23px;
     height: 23px;
   }
 }
@@ -90,6 +92,11 @@
   text-transform: uppercase;
 }
 
+@media only screen and (min-width: 768px) {
+  .footer-list {
+    text-align: center;
+  }
+}
 @media only screen and (min-width: 1280px) {
   .footer-list {
     display: flex;
@@ -130,16 +137,49 @@
 }
 @media only screen and (min-width: 768px) {
   .footer-social-item {
+  }
+}
+
+.footer-social-link {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(246, 245, 239, 0.5);
+  border-radius: 6px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-social-link {
     width: 40px;
     height: 40px;
   }
 }
 
-.footer-social-link {
-  fill: #f6f5ef;
+@media only screen and (min-width: 1280px) {
+  .footer-social-link {
+  }
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  border-color: var(--linear-green);
 }
 
 .social-icons {
+  fill: var(--white);
+}
+
+@media only screen and (min-width: 768px) {
+  .social-icons {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.social-icons:hover {
+  fill: var(--linear-green);
 }
 
 .footer-privacy {
@@ -178,5 +218,56 @@
   .privacy-text {
     font-size: 14px;
     letter-spacing: 0.42px;
+  }
+}
+
+.cirkel-footer-first {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #91afba;
+  filter: blur(100px);
+  border-radius: 50%;
+  z-index: -3;
+  width: 414px;
+  height: 414px;
+  opacity: 0.6;
+  transform: translate(-41%, 15%);
+}
+
+@media only screen and (min-width: 768px) {
+  .cirkel-footer-first {
+    transform: translate(-32%, 30%);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .cirkel-footer-first {
+    top: 50%;
+    left: 50%;
+    transform: translate(-90%, 30%);
+  }
+}
+
+.cirkel-footer-second {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #91afba;
+  width: 317px;
+  height: 317px;
+  opacity: 0.3;
+  filter: blur(100px);
+  border-radius: 50%;
+  z-index: -3;
+}
+@media only screen and (max-width: 1279.98px) {
+  .cirkel-footer-second {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .cirkel-footer-second {
+    transform: translate(20%, 50%);
   }
 }

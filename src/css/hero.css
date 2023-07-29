@@ -5,7 +5,9 @@
 }
 
 
-@media screen and (min-width: 320px) and (max-width: 375px) {}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .hero-photos {}
+}
 
 @media screen and (max-width: 768px) {}
 
@@ -205,8 +207,6 @@
 
   width: 56px;
   top: 163px;
-
-
   z-index: 2;
 }
 

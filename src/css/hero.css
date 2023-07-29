@@ -7,7 +7,7 @@
 
 @media screen and (min-width: 320px) and (max-width: 375px) {}
 
-@media screen and (min-width: 376px) and (max-width: 768px) {}
+@media screen and (max-width: 768px) {}
 
 @media screen and (min-width: 769px) {}
 
@@ -24,9 +24,111 @@
             background-size: cover;
           } */
 
-.box {
-  display: flex;
-  gap: 436px;
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+
+  .box {
+
+    display: flex;
+    flex-direction: column-reverse;
+
+  }
+
+  .hero-sibscribe-container {
+
+    max-width: 698px;
+
+  }
+
+  .box-background {
+    left: auto;
+
+  }
+
+  .box-client1 {
+    left: 30px;
+
+  }
+
+  .box-client2 {
+    left: 75px;
+  }
+
+  .box-client3 {
+    left: 120px;
+  }
+
+  .our-clients {
+    left: 30px;
+  }
+
+  .box-yacht {
+    left: 30px;
+  }
+
+  .box-boss {
+    left: 369px;
+  }
+
+  .cost {
+    left: 30px;
+  }
+}
+
+
+@media only screen and (min-width: 1280px) {
+
+  .box {
+    display: flex;
+    gap: 436px;
+  }
+
+  .hero-sibscribe-container {
+    margin-left: 236px;
+    margin-top: 132px;
+    margin-bottom: 244px;
+    width: 554px;
+
+  }
+
+  .box-background {
+    left: 32px;
+  }
+
+  .hero-title {
+    max-width: 490px;
+  }
+
+  .box-client1 {
+    left: 90px;
+
+  }
+
+  .box-client2 {
+    left: 133px;
+  }
+
+  .box-client3 {
+    left: 176px;
+  }
+
+  .our-clients {
+    left: 90px;
+  }
+
+  .box-yacht {
+    left: 70px;
+  }
+
+
+  .box-boss {
+    left: 370px;
+  }
+
+  .cost {
+    left: 90px;
+  }
+
 }
 
 
@@ -35,6 +137,7 @@
   |  Photos
   |============================
 */
+
 
 .hero-photos {
   position: relative;
@@ -45,18 +148,16 @@
   width: 462px;
   height: 598px;
   top: 64px;
-  left: 32px;
-  background-repeat: no-repeat;
   z-index: -6;
   position: absolute;
 }
+
 
 /* Boss & Yacht photos block  */
 
 .box-client1 {
   width: 56px;
   top: 96px;
-  left: 90px;
   z-index: -1;
   position: absolute;
   background-repeat: no-repeat;
@@ -66,7 +167,6 @@
 .box-client2 {
   width: 56px;
   top: 96px;
-  left: 133px;
   z-index: -2;
   position: absolute;
   background-repeat: no-repeat;
@@ -76,7 +176,6 @@
 .box-client3 {
   width: 56px;
   top: 96px;
-  left: 176px;
   z-index: -3;
   position: absolute;
   background-repeat: no-repeat;
@@ -94,7 +193,7 @@
 
   width: 56px;
   top: 163px;
-  left: 90px;
+
 
   z-index: 2;
 }
@@ -104,7 +203,6 @@
 
 .box-yacht {
   top: 289px;
-  left: 70px;
   width: 374px;
   height: 221px;
   z-index: -5;
@@ -115,14 +213,12 @@
 
 .box-boss {
   top: 96px;
-  left: 360px;
   width: 232px;
   z-index: -4;
   position: absolute;
   background-repeat: no-repeat;
   background-size: cover;
-  /* stroke-width: 1px;
-  stroke: rgba(246, 245, 239, 0.20); */
+
 }
 
 .cost {
@@ -132,7 +228,7 @@
   gap: 14px;
   width: 362px;
   top: 532px;
-  left: 90px;
+
   position: absolute;
 }
 
@@ -161,22 +257,13 @@
 */
 
 
-.hero-sibscribe-container {
-  margin-left: 236px;
-  margin-top: 132px;
-  margin-bottom: 244px;
-  width: 554px;
-  height: 360px;
-}
 
 .hero-title {
 
   font-size: 60px;
   font-weight: 500;
   letter-spacing: -2.7px;
-  max-width: 490px;
   line-height: 110%;
-  letter-spacing: -2.7px;
 
 }
 
@@ -193,7 +280,7 @@
 }
 
 .hero-item {
-  /* all: unset; */
+
   width: 539px;
   font-size: 16px;
   font-weight: 400;
@@ -201,11 +288,8 @@
   letter-spacing: -0.32px;
   margin-top: 16px;
   margin-bottom: 32px;
-
-
-  /* line-height: 140%;
-  letter-spacing: -0.32px; */
 }
+
 
 .hero-buttons-container {
   display: flex;
@@ -216,7 +300,6 @@
 }
 
 .hero-btn-get {
-  /* color: unset; */
   padding: 14px 28px;
   border-radius: 60px;
   width: auto;
@@ -231,7 +314,6 @@
 }
 
 .hero-btn-explore {
-  /* color: unset; */
   padding: 14px 28px;
   width: 117px;
   height: 48px;
@@ -240,7 +322,6 @@
   font-weight: 700;
   line-height: 110%;
   border: 1px solid var(--white, #F6F5EF);
-
 }
 
 .hero-btn-get:hover,
@@ -253,7 +334,215 @@
   color: var(--light-green);
 }
 
+/* Mobile adaptation  */
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+  .box {
+    display: flex;
+    flex-direction: column-reverse;
+    /* gap: 40px; */
+
+  }
+
+  .hero-sibscribe-container {
+
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-title {
+
+    max-width: 304px;
+    width: 100%;
+    /* height: 120px; */
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -1.62px;
+
+  }
+
+  .hero-title-grey {
+    font-family: DMSans-tp;
+    background: linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: -1.62px;
+
+  }
+
+  .hero-item {
+    /* all: unset; */
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.32px;
+    margin-top: 14px;
+    margin-bottom: 24px;
+  }
+
+  .hero-buttons-container {
+    display: flex;
+    gap: 11px;
+    align-items: center;
+    color: #F6F5EF;
+
+  }
+
+  .hero-btn-get {
+    padding: 14px 28px;
+    border-radius: 60px;
+    width: auto;
+    height: 43px;
+    font-size: 14px;
+
+    background: var(--light-green, #93ABAE);
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: -0.63px;
+    color: var(--white, #F6F5EF);
+
+  }
+
+  .hero-btn-explore {
+    padding: 14px 28px;
+    width: auto;
+    height: 43px;
+    font-size: 14px;
+    border-radius: 60px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: -0.63px;
+    border: 1px solid var(--white, #F6F5EF);
+  }
+
+  /* Box background */
+
+  .hero-photos {
+    /* all: unset; */
+    position: relative;
+    margin-left: -32px;
+
+    /* padding-bottom: 480px; */
+
+  }
+
+  .box-background {
+
+    width: 335px;
+    height: 427px;
+    top: 64px;
+    left: 32px;
+    z-index: -6;
+    position: absolute;
+  }
+
+
+  /* Boss & Yacht photos block  */
+
+  .box-client1 {
+    width: 48px;
+    top: 82px;
+    left: 56px;
+    z-index: -1;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .box-client2 {
+    width: 48px;
+    top: 82px;
+    left: 96px;
+    z-index: -2;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .box-client3 {
+    width: 48px;
+    top: 82px;
+    left: 136px;
+    z-index: -3;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .our-clients {
+    min-width: 56px;
+    color: #11131F;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.56px;
+    text-transform: uppercase;
+    position: absolute;
+
+    top: 143px;
+    left: 56px;
+    z-index: 2;
+  }
+
+
+
+  /* Boss & Yacht photos block  */
+
+  .box-yacht {
+    top: 229px;
+    left: 56px;
+    width: 287px;
+    height: 167px;
+    z-index: -5;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .box-boss {
+    top: 96px;
+    left: 250px;
+    width: 133px;
+    z-index: -4;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+  .cost {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    width: 287px;
+    top: 392px;
+    left: 56px;
+    position: absolute;
+  }
+
+  .cost-price {
+    color: #11131F;
+    font-size: 48px;
+    letter-spacing: -2.16px;
+    text-transform: uppercase;
+  }
+
+  .cost-strong {
+    color: #11131F;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: -0.63px;
+
+  }
+}
+
+/* all: unset; */
 /**
   |============================
   | Example for the Photos position

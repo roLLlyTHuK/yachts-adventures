@@ -73,7 +73,7 @@
   color: #93abae;
   border: 1px solid #93abae;
 }
-
+/*============================|gallery|===========================*/
 .yacht-gallery {
   position: relative;
 }
@@ -82,13 +82,13 @@
 }
 .gallery-btn {
   position: absolute;
-  top: 50%;
+  bottom: -36px;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1216px;
+  width: 114px;
   padding: 0;
   margin: 0;
   z-index: 10;
@@ -97,8 +97,8 @@
 .btn-next {
   display: flex;
   width: 50px;
-  height: 37px;
-  padding: 14px 16px;
+  height: 36px;
+  padding: 14px;
   background: transparent;
   align-items: center;
   border-radius: 60px;
@@ -107,9 +107,7 @@
   color: var(--white, #f6f5ef);
 }
 .btn-prev:hover,
-.btn-prev:focus,
-.btn-next:hover,
-.btn-next:focus {
+.btn-next:hover {
   color: #93abae;
   border: 1px solid #93abae;
 }
@@ -148,10 +146,15 @@
 }
 /*============================|adoptation|===========================*/
 @media only screen and (min-width: 768px) {
-   {
+  .gallery-btn {
+    width: 116px;
   }
 }
 @media only screen and (min-width: 1280px) {
-   {
+  .gallery-btn {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1216px;
   }
 }

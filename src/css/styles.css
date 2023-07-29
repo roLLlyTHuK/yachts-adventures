@@ -41,11 +41,6 @@ body {
   position: relative;
 }
 
-button {
-  outline: none;
-  color: currentColor;
-}
-
 @font-face {
   font-family: DMSans-tp;
   src: url(../fonts/DMSans-VariableFont.ttf);

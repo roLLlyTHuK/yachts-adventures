@@ -37,4 +37,6 @@ button {
   line-height: inherit;
   cursor: pointer;
   padding: 0;
+  outline: none;
+  color: currentColor;
 }

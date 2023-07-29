@@ -2,70 +2,74 @@
 .yachts-top-box {
   position: relative;
 }
-.circle1,
-.circle2 {
-  position: absolute;
-  top: 0;
-  background: #91afba;
-  filter: blur(100px);
-  border-radius: 50%;
-  z-index: 5;
-}
-.circle1 {
-  left: 0;
-  width: 414px;
-  height: 414px;
-  opacity: 0.6;
-  transform: translate(55%, -20%);
-}
-.circle2 {
-  right: 0;
-  opacity: 0.3;
-  width: 316px;
-  height: 316px;
-  transform: translate(-100%, -20%);
-}
 .vectors {
   position: absolute;
   top: 140px;
   left: -20px;
   width: 1509px;
   height: 1611px;
-  opacity: 0.1;
-  z-index: -1;
-  /* transform: rotate(101.767deg); не потрібно бо в пнг вже є цей кут*/
+  opacity: 1;
+  z-index: 5;
 }
 .yacht-title-box {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
-  margin-bottom: 164px;
+  margin-bottom: 98px;
+}
+.yacht-title-box::after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 50%;
+  transform: translate(-150%, -70%);
+  width: 414px;
+  height: 414px;
+  background: #91afba;
+  filter: blur(100px);
+  border-radius: 50%;
+  opacity: 0.6;
+  z-index: 5;
+}
+.yachts-top-box::before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  right: 50%;
+  transform: translate(75%, -80%);
+  width: 316px;
+  height: 316px;
+  background: #91afba;
+  filter: blur(100px);
+  border-radius: 50%;
+  opacity: 0.3;
+  z-index: 5;
 }
 .yacht-title-box h2 {
-  font-family: DM Sans;
-  font-size: 100px;
+  font-size: 36px;
   font-weight: 500;
   line-height: 1.1;
-  letter-spacing: -4.5px;
+  letter-spacing: -1.62px;
   word-wrap: break-word;
-  margin-bottom: 64px;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 40px;
   z-index: 10;
 }
 .yacht-rent-btn {
-  all: unset;
-  width: 153px;
-  padding: 14px 28px;
+  width: 130px;
   border: 1px solid #f6f5ef;
   border-radius: 60px;
   background-color: transparent;
   color: #f6f5ef;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.1;
-  letter-spacing: -0.81px;
+  letter-spacing: -0.63px;
   text-align: center;
+  padding: 12px;
   cursor: pointer;
 }
 .yacht-rent-btn:hover,
@@ -76,15 +80,16 @@
 /*============================|gallery|===========================*/
 .yacht-gallery {
   position: relative;
+  margin: 0 auto;
 }
 .yacht-gallery .swiper {
-  width: 85%;
+  width: 100%;
 }
 .gallery-btn {
   position: absolute;
-  bottom: -36px;
+  bottom: -48px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -128,18 +133,32 @@
 .title-yacht {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   text-transform: uppercase;
+  padding: 0 16px;
 }
 .yacht-name {
+  font-size: 16px;
   font-weight: 700;
   line-height: 1.2;
-  text-transform: uppercase;
+  letter-spacing: -0.72px;
   width: 177px;
   height: 19px;
   overflow: hidden;
 }
 .yacht-class {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 0.36px;
   opacity: 0.5;
+}
+.yacht-card-tab {
+  padding: 0 16px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.18;
+  letter-spacing: 0.42px;
 }
 .yacht-card-tab tr td:nth-child(1) {
   text-transform: uppercase;
@@ -147,14 +166,37 @@
 /*============================|adoptation|===========================*/
 @media only screen and (min-width: 768px) {
   .gallery-btn {
+    bottom: -54px;
     width: 116px;
+  }
+  .yacht-title-box {
+    margin-bottom: 100px;
+  }
+  .yacht-title-box h2 {
+    font-size: 70px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -3.15px;
+    width: 640px;
+    margin-bottom: 64px;
   }
 }
 @media only screen and (min-width: 1280px) {
+  .yacht-gallery .swiper {
+    width: 85%;
+  }
   .gallery-btn {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 1216px;
+  }
+  .yacht-title-box {
+    margin-bottom: 164px;
+  }
+  .yacht-title-box h2 {
+    font-size: 100px;
+    letter-spacing: -4.5px;
+    width: 882px;
   }
 }

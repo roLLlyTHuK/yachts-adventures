@@ -1,4 +1,7 @@
 /*============================|top side|===========================*/
+.yachts-box {
+  position: relative;
+}
 .yachts-top-box {
   position: relative;
 }
@@ -8,8 +11,8 @@
   left: -20px;
   width: 1509px;
   height: 1611px;
-  opacity: 1;
-  z-index: 5;
+  opacity: 0.15;
+  z-index: -1;
 }
 .yacht-title-box {
   display: flex;
@@ -96,6 +99,7 @@
   width: 114px;
   padding: 0;
   margin: 0;
+  background: transparent;
   z-index: 10;
 }
 .btn-prev,
@@ -123,7 +127,8 @@
   gap: 32px;
   padding: 16px 16px 32px;
   border-radius: 8%;
-  background-color: rgba(31, 33, 45, 0.5);
+  background-color: #1f212d;
+  width: 335px;
 }
 .yacht-card > img {
   display: block;
@@ -169,6 +174,9 @@
     bottom: -54px;
     width: 116px;
   }
+  .yacht-card {
+    width: 354px;
+  }
   .yacht-title-box {
     margin-bottom: 100px;
   }
@@ -183,7 +191,7 @@
 }
 @media only screen and (min-width: 1280px) {
   .yacht-gallery .swiper {
-    width: 85%;
+    width: 90%;
   }
   .gallery-btn {
     top: 50%;

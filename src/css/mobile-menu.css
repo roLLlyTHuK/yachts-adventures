@@ -1,3 +1,6 @@
+.mobail-div {
+  position: relative;
+}
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
@@ -14,7 +17,7 @@
   outline: none;
 }
 .menu-close {
-  stroke: #f6f5ef;
+  stroke: var(--white);
 }
 .mobail-img {
   width: 16px;
@@ -46,11 +49,11 @@
   background-color: #11131f;
   z-index: 999;
 
-  transform: translateX(150%);
+  transform: translateX(300%);
   transition: transform 250ms ease-in-out;
 }
 .mobail-div {
-  border-bottom: 1px solid #f6f5ef;
+  border-bottom: 1px solid gray;
   padding-bottom: 28px;
 
   display: flex;
@@ -80,4 +83,30 @@
   padding: 7px;
   color: #fff;
   text-decoration: none;
+}
+.shadow-one {
+  /* transform: translate(-50%, 20%); */
+  opacity: 0.6;
+  background: #91afba;
+  bottom: 0;
+  left: -148px;
+}
+.shadow-two {
+  /* transform: translate(40%, -40%); */
+  opacity: 0.9;
+  background: #939cac;
+  bottom: -140px;
+  right: -14px;
+}
+
+.shadow-one,
+.shadow-two {
+  width: 279px;
+  height: 279px;
+
+  border-radius: 279px;
+  filter: blur(100px);
+  position: absolute;
+  z-index: -1;
+  transform: rotate(-45deg);
 }

@@ -107,6 +107,9 @@ display: flex;
   border: 1px solid #93ABAE;
 
 }
+.rent-button-icon{
+  fill:#f6f5ef ;
+}
 
 /* Стилі для мобільних пристроїв і екранів з шириною від 0 до 375px */
 @media (max-width: 375px) {

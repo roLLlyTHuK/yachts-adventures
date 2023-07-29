@@ -14,10 +14,7 @@
         <symbol id="close" viewBox="0 0 32 32">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.733" d="M24 8 8 24M8 8l16 16" />
         </symbol>
-        <symbol id="icon-x" viewBox="0 0 32 32">
-<path fill="none" stroke="#f6f5ef" style="stroke: var(--color1, #f6f5ef)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.7333" d="M24 8l-16 16"></path>
-<path fill="none" stroke="#f6f5ef" style="stroke: var(--color1, #f6f5ef)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.7333" d="M8 8l16 16"></path>
-</symbol>
+       
 
         <!-- Arrows -->
         <symbol id="arrow-left" viewBox="0 0 58 32">
@@ -29,9 +26,7 @@
         <symbol id="arrow-top" viewBox="0 0 17 32">
             <path d="M0 9.778 8.533 0l8.533 9.778h-7.055V32H7.055V9.778H0z" />
         </symbol>
-        <symbol id="icon-arrow-rent" viewBox="0 0 58 32">
-<path fill="#f6f5ef" style="fill: var(--color1, #f6f5ef)" d="M40 2.144l17.6 13.856-17.6 13.856v-11.456h-40v-4.8h40v-11.456z"></path>
-</symbol>
+
 
         <!-- Socials -->
         <symbol id="facebook" viewBox="0 0 18 32">

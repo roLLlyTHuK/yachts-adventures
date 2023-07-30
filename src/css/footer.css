@@ -11,6 +11,7 @@
   padding-bottom: 14px;
   position: relative;
 }
+
 @media only screen and (min-width: 768px) {
   .footer-container.container {
     padding-top: 64px;
@@ -40,6 +41,7 @@
     margin-right: 128px;
   }
 }
+
 .footer-logo-link {
   display: flex;
   gap: 8px;
@@ -49,20 +51,23 @@
   width: 18px;
   height: 18px;
 }
+
 @media only screen and (min-width: 768px) {
   .logo-img {
     width: 23px;
     height: 23px;
   }
 }
+
 .footer-logo-text {
-  color: #f6f5ef;
+  color: var(--white);
   font-size: 14px;
   font-weight: 700;
   line-height: 114%;
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
+
 @media only screen and (min-width: 768px) {
   .footer-logo-text {
     font-size: 18px;
@@ -83,7 +88,7 @@
 }
 
 .footer-text-nav {
-  color: #f6f5ef;
+  color: var(--white);
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -120,7 +125,7 @@
 
 .footer-social-text {
   margin-bottom: 16px;
-  color: #f6f5ef;
+  color: var(--white);
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -157,22 +162,19 @@
   }
 }
 
-@media only screen and (min-width: 1280px) {
-  .footer-social-link {
-  }
-}
-
 .footer-social-link:hover,
 .footer-social-link:focus {
   border-color: var(--linear-green);
   color: var(--linear-green);
-  /* color: red;
-  border-color: red; */
 }
 
 .social-icons {
-  /* fill: var(--white); */
-  fill: currentColor;
+  fill: var(--white);
+}
+
+.footer-social-link:hover .social-icons,
+.footer-social-link:focus .social-icons {
+  fill: #bbc5c1;
 }
 
 @media only screen and (min-width: 768px) {
@@ -181,11 +183,6 @@
     height: 22px;
   }
 }
-
-/* .social-icons:hover,
-.social-icons:focus {
-  fill: rgb(161, 181, 186, 0.5);
-} */
 
 .footer-privacy {
   display: flex;
@@ -210,6 +207,7 @@
     letter-spacing: 0.42px;
   }
 }
+
 .privacy-text {
   color: rgba(246, 245, 239, 0.5);
   text-align: center;
@@ -219,6 +217,7 @@
   line-height: 118%; /* 14.16px */
   letter-spacing: 0.36px;
 }
+
 @media only screen and (min-width: 768px) {
   .privacy-text {
     font-size: 14px;
@@ -248,8 +247,6 @@
 
 @media only screen and (min-width: 1280px) {
   .cirkel-footer-first {
-    top: 50%;
-    left: 50%;
     transform: translate(-90%, 30%);
   }
 }
@@ -266,11 +263,13 @@
   border-radius: 50%;
   z-index: -3;
 }
+
 @media only screen and (max-width: 1279.98px) {
   .cirkel-footer-second {
     display: none;
   }
 }
+
 @media only screen and (min-width: 1280px) {
   .cirkel-footer-second {
     transform: translate(20%, 50%);

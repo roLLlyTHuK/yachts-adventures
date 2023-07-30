@@ -3,7 +3,7 @@ function handleScroll() {
   const scrollToTopButton = document.getElementById("scrollToTopButton");
   if (window.pageYOffset > window.innerHeight) {
     scrollToTopButton.style.visibility = "visible";
-    scrollToTopButton.style.opacity = 1;
+    scrollToTopButton.style.opacity = 0.5;
   } else {
     scrollToTopButton.style.visibility = "hidden";
     scrollToTopButton.style.opacity = 0;

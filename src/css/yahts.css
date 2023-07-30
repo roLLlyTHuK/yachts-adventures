@@ -26,10 +26,10 @@
   justify-content: center;
   align-items: center;
   width: 130px;
-  border: 1px solid #f6f5ef;
+  border: 1px solid var(--white);
   border-radius: 60px;
   background-color: transparent;
-  color: #f6f5ef;
+  color: var(--white);
   font-size: 14px;
   font-weight: 700;
   line-height: 1.1;
@@ -40,8 +40,8 @@
 }
 .yacht-rent-btn:hover,
 .yacht-rent-btn:focus {
-  color: #93abae;
-  border: 1px solid #93abae;
+  color: var(--light-green);
+  border: 1px solid var(--light-green);
 }
 /*==========================|Light+vectors|=========================*/
 .vectors {
@@ -101,7 +101,6 @@
   padding: 0;
   margin: 0;
   background: transparent;
-  z-index: 10;
 }
 .btn-prev,
 .btn-next {
@@ -112,14 +111,14 @@
   background: transparent;
   align-items: center;
   border-radius: 60px;
-  border: 1px solid var(--white, #f6f5ef);
+  border: 1px solid var(--white);
   cursor: pointer;
-  color: var(--white, #f6f5ef);
+  color: var(--white);
 }
 .btn-prev:hover,
 .btn-next:hover {
-  color: #93abae;
-  border: 1px solid #93abae;
+  color: var(--light-green);
+  border: 1px solid var(--light-green);
 }
 .yacht-card {
   display: flex;
@@ -128,12 +127,12 @@
   gap: 32px;
   padding: 16px 16px 32px;
   border-radius: 8%;
-  background-color: #1f212d;
-  width: 335px;
+  background-color: var(--blue);
+  width: 334px;
 }
-.yacht-card:hover img,
-.yacht-card:focus img {
-  transform: scale(1.5);
+.yacht-card:hover > .picture-box img,
+.yacht-card:focus > .picture-box img {
+  transform: scale(1.1);
 }
 .picture-box {
   border-radius: 26px;

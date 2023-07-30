@@ -1,25 +1,28 @@
 /*============================|top side|===========================*/
-.yachts-top-box {
-  margin: 0 auto;
+.yachts-box {
+  display: block;
 }
 .yacht-title-box {
-  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  width: 100%;
+  justify-content: center;
+  width: 310px;
+  margin: 0 auto;
   margin-bottom: 98px;
 }
-.yacht-title-box h2 {
+.title-light {
+  position: relative;
+  width: auto;
+  z-index: -1;
+}
+.yacht-title-h2 {
   font-size: 36px;
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: -1.62px;
   word-wrap: break-word;
-  width: 100%;
   padding: 0;
   margin-bottom: 40px;
-  z-index: -10;
 }
 .yacht-rent-btn {
   display: flex;
@@ -54,8 +57,8 @@
   opacity: 0.2;
   z-index: -1;
 }
-.yacht-title-box::before,
-.yacht-title-box::after {
+.title-light::before,
+.title-light::after {
   content: '';
   position: absolute;
   top: 0;
@@ -67,16 +70,16 @@
   filter: blur(100px);
   z-index: 5;
 }
-.yacht-title-box::before {
-  top: -15%;
+.title-light::before {
+  top: -30%;
   left: 0;
   width: 414px;
   height: 414px;
   opacity: 0.6;
 }
-.yacht-title-box::after {
+.title-light::after {
   top: -15%;
-  left: 45%;
+  left: 40%;
   width: 316px;
   height: 316px;
   opacity: 0.3;
@@ -91,7 +94,7 @@
 }
 .gallery-btn {
   position: absolute;
-  bottom: -48px;
+  bottom: -50px;
   left: 50%;
   transform: translate(-50%, 0);
   display: flex;
@@ -176,23 +179,30 @@
   text-transform: uppercase;
 }
 /*============================|adoptation|===========================*/
+@media only screen and (max-width: 320px) {
+  .yacht-title-box {
+    width: 100%;
+  }
+  .yacht-card {
+    width: 100%;
+  }
+}
 @media only screen and (min-width: 768px) {
+  .yacht-title-box {
+    width: 640px;
+    margin-bottom: 100px;
+  }
   .gallery-btn {
     bottom: -54px;
     width: 116px;
   }
   .yacht-card {
-    width: 354px;
+    width: 350px;
   }
-  .yacht-title-box {
-    margin-bottom: 100px;
-  }
-  .yacht-title-box h2 {
+  .yacht-title-h2 {
     font-size: 70px;
     font-weight: 500;
     line-height: 1.1;
-    letter-spacing: -3.15px;
-    width: 640px;
     margin-bottom: 64px;
   }
 }
@@ -210,12 +220,11 @@
     width: 1216px;
   }
   .yacht-title-box {
+    width: 880px;
     margin-bottom: 164px;
   }
-  .yacht-title-box h2 {
+  .yacht-title-h2 {
     font-size: 100px;
-    letter-spacing: -4.5px;
-    width: 882px;
   }
   .yachts-top-box {
     padding-left: 80px;

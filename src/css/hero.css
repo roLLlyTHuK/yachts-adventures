@@ -265,7 +265,7 @@
 }
 
 
-/* Boss & Yacht photos block  */
+/* Boss & client photos block  */
 
 .box-client1 {
   width: 56px;
@@ -412,9 +412,14 @@
 }
 
 .hero-btn-get {
-  padding: 14px 28px;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  padding: auto;
   border-radius: 60px;
-  width: auto;
+  min-width: 150px;
   height: 48px;
   font-size: 18px;
   letter-spacing: -0.81px;
@@ -507,12 +512,15 @@
   }
 
   .hero-btn-get {
-    padding: 14px 28px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: auto;
     border-radius: 60px;
-    width: auto;
+    min-width: 130px;
     height: 43px;
     font-size: 14px;
-
     background: var(--light-green, #93ABAE);
     font-weight: 700;
     line-height: 110%;
@@ -522,8 +530,11 @@
   }
 
   .hero-btn-explore {
-    padding: 14px 28px;
-    width: auto;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    padding: auto;
+    min-width: 104px;
     height: 43px;
     font-size: 14px;
     border-radius: 60px;

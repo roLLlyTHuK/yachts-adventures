@@ -16,6 +16,7 @@
 @import url('./modal.css');
 @import url('./mobile-menu.css');
 @import url('./button-to-top.css');
+@import url('./animate.css');
 
 :root {
   /* Colors */

@@ -165,10 +165,14 @@
 .footer-social-link:hover,
 .footer-social-link:focus {
   border-color: var(--linear-green);
+  color: var(--linear-green);
+  /* color: red;
+  border-color: red; */
 }
 
 .social-icons {
-  fill: var(--white);
+  /* fill: var(--white); */
+  fill: currentColor;
 }
 
 @media only screen and (min-width: 768px) {
@@ -178,9 +182,10 @@
   }
 }
 
-.social-icons:hover {
-  fill: var(--linear-green);
-}
+/* .social-icons:hover,
+.social-icons:focus {
+  fill: rgb(161, 181, 186, 0.5);
+} */
 
 .footer-privacy {
   display: flex;

@@ -174,7 +174,7 @@
 
 .footer-social-link:hover .social-icons,
 .footer-social-link:focus .social-icons {
-  fill: #bbc5c1;
+  fill: url(#linear-green);
 }
 
 @media only screen and (min-width: 768px) {

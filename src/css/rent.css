@@ -1,38 +1,22 @@
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-.container-r{
-  margin-bottom: 164px;
-}
 
-.rent-container{
-
-    display: inline-flex;
-      justify-content: center;
-      align-items: flex-end;
-      gap: 188px;
-    
-}
 .img-box{
   display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 64px;
-    
+flex-direction: column;
+align-items: flex-start;
+gap: 64px;
 }
+
 .rent-txt{
-color: #F6F5EF;
-  width: 282px;
-  font-size: 60px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 110%;
-  /* 66px */
-  letter-spacing: -2.7px;
-  margin-bottom: 64px;
+
+color:#F6F5EF;
+
+  font-family: DM Sans;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 66px;
+    letter-spacing: -0.045em;
+    text-align: left;
+  
 }
 .rent-image-container{
   width: 282px;
@@ -44,12 +28,7 @@ color: #F6F5EF;
  ::placeholder {
    color: white;
  }
-.rent-form{
-  display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 20px;
-}
+
 .form-box{
   display: flex;
     flex-direction: column;
@@ -59,11 +38,7 @@ color: #F6F5EF;
 }
 .rent-form-row{
   
-display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  background-color: transparent;
-  position: relative;
+
 
     
 }
@@ -78,6 +53,7 @@ display: flex;
   border: none;
   border-bottom: 1px solid #ccc;
   border-radius: 0;
+  color: #fff;
   
 }
 

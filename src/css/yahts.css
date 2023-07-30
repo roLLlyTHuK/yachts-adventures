@@ -13,7 +13,7 @@
 .title-light {
   position: relative;
   width: auto;
-  z-index: -1;
+  z-index: 1;
 }
 .yacht-title-h2 {
   font-size: 36px;
@@ -23,6 +23,7 @@
   word-wrap: break-word;
   padding: 0;
   margin-bottom: 40px;
+  z-index: 10;
 }
 .yacht-rent-btn {
   display: flex;

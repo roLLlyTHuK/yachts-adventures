@@ -200,7 +200,7 @@
     height: 414px;
     /* border: 1px solid red; */
     background: #939CAC;
-    /* filter: blur(100px); */
+    filter: blur(100px);
     border-radius: 414px;
     opacity: 0.9;
     z-index: -21;
@@ -215,7 +215,7 @@
     height: 414px;
     /* border: 1px solid red; */
     background: #91AFBA;
-    /* filter: blur(180px); */
+    filter: blur(180px);
     border-radius: 414px;
     opacity: 0.9;
     z-index: -22;
@@ -231,7 +231,7 @@
     height: 316px;
     /* border: 1px solid red; */
     background: #A6A9B2;
-    /* filter: blur(100px); */
+    filter: blur(100px);
     border-radius: 50%;
     opacity: 0.3;
     z-index: -23;

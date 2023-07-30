@@ -3,7 +3,7 @@
 }
 
 .mobail-div-two {
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid rgb(170, 166, 166, 0.4);
   display: flex;
 }
 
@@ -30,6 +30,7 @@
     height: 23px;
   }
 }
+
 .header-logo {
   all: unset;
   color: var(--white);
@@ -45,7 +46,10 @@
   align-items: center;
   cursor: pointer;
 }
-
+.header-logo:hover,
+.header-logo:focus {
+  color: var(--light-green);
+}
 @media (min-width: 768px) {
   .header-logo {
     all: unset;
@@ -76,7 +80,10 @@
   background-color: transparent;
   cursor: pointer;
 }
-
+.header-links:hover,
+.header-links:focus {
+  color: var(--light-green);
+}
 .header-link {
   display: none;
 }

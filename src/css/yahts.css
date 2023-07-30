@@ -64,6 +64,9 @@
   z-index: 10;
 }
 .yacht-rent-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 130px;
   border: 1px solid #f6f5ef;
   border-radius: 60px;
@@ -132,10 +135,13 @@
   background-color: #1f212d;
   width: 335px;
 }
-.yacht-card > img {
+.picture-box {
+  border-radius: 26px;
+  overflow: hidden;
+}
+.picture-box img {
   display: block;
   width: 100%;
-  border-radius: 26px;
 }
 .title-yacht {
   display: flex;

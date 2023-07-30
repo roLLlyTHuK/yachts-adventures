@@ -1,5 +1,5 @@
 .header {
-  background-color: #11131f;
+  background-color: var(--dark-blue);
 }
 
 .mobail-div-two {
@@ -11,17 +11,28 @@
   all: unset;
   display: flex;
   width: 100%;
-  margin: 32px 0;
+  margin: 27px 0;
   justify-content: space-between;
 }
-
-.header-svg {
-  fill: rgb(211, 220, 220);
+@media (min-width: 768px) {
+  .header-nav {
+    margin: 32px 0;
+  }
+}
+.header-img {
   margin-right: 8px;
+  width: 18px;
+  height: 18px;
+}
+@media (min-width: 768px) {
+  .header-img {
+    width: 23px;
+    height: 23px;
+  }
 }
 .header-logo {
   all: unset;
-  color: #f6f5ef;
+  color: var(--white);
   font-family: DMSans-tp, sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -32,6 +43,7 @@
   background-color: transparent;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -48,6 +60,7 @@
     background-color: transparent;
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
 }
 .header-links {
@@ -61,6 +74,7 @@
   letter-spacing: 0.42px;
   text-transform: uppercase;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .header-link {

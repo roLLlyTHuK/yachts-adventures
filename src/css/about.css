@@ -192,10 +192,15 @@
 
 .about-image3-container {
   position: absolute;
-  width: 260px;
-  height: 244px;
-  bottom: -268px;
+  bottom: calc(-20px - 65vw);
   right: 20px;
+  width: 69vw;
+}
+@media only screen and (min-width: 375px) {
+  .about-image3-container {
+    width: 260px;
+    bottom: -268px;
+  }
 }
 @media only screen and (min-width: 768px) {
   .about-image3-container {

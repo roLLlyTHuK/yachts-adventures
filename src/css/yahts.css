@@ -53,9 +53,9 @@
 .vectors {
   display: none;
   position: absolute;
-  top: 140px;
-  left: -140px;
-  width: 1509px;
+  top: 130px;
+  left: -65px;
+  width: 1280px;
   height: 1611px;
   opacity: 0.2;
   z-index: -1;

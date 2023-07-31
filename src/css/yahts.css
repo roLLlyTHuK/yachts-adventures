@@ -28,10 +28,8 @@
   margin-bottom: 40px;
   z-index: 10;
 }
-.yacht-rent-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* .yacht-rent-btn {
+  display: block;
   width: 130px;
   border: 1px solid var(--white);
   border-radius: 60px;
@@ -41,15 +39,15 @@
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.63px;
-  text-align: center;
-  padding: 12px;
+  padding: 12px 24px;
   cursor: pointer;
 }
 .yacht-rent-btn:hover,
 .yacht-rent-btn:focus {
   color: var(--light-green);
   border: 1px solid var(--light-green);
-}
+} */
+
 /*==========================|Light+vectors|=========================*/
 .vectors {
   display: none;
@@ -87,6 +85,76 @@
   width: 316px;
   height: 316px;
   opacity: 0.3;
+}
+.liquid-btn {
+  position: relative;
+  display: block;
+  width: 130px;
+  border: 1px solid var(--white);
+  border-radius: 60px;
+  background-color: transparent;
+  text-align: center;
+  padding: 12px 24px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.liquid-btn .liquid-s {
+  position: relative;
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.63px;
+  z-index: 1;
+}
+
+.liquid-btn .liquid {
+  position: absolute;
+  top: -80px;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background: #4973ff;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+
+.liquid-btn .liquid::after,
+.liquid-btn .liquid::before {
+  content: '';
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  background: #000;
+}
+
+.liquid-btn .liquid::before {
+  border-radius: 45%;
+  background: rgba(20, 20, 20, 1);
+  animation: animate 5s linear infinite;
+}
+
+.liquid-btn .liquid::after {
+  border-radius: 40%;
+  background: rgba(20, 20, 20, 0.5);
+  animation: animate 10s linear infinite;
+}
+
+.liquid-btn:hover .liquid {
+  top: -120px;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
 }
 /*============================|gallery|===========================*/
 .yacht-gallery {

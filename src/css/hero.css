@@ -533,7 +533,7 @@
 
 /* Mobile adaptation  */
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 375px) {
 
   .box {
     display: flex;
@@ -608,7 +608,11 @@
     color: var(--white, #F6F5EF);
   } */
 
-  .hero-buttons-container.liquid-btn {
+
+  /* New Bottom Swimming */
+
+
+  .hero-buttons-container .liquid-btn {
     position: relative;
     display: block;
     min-width: 130px;
@@ -766,8 +770,6 @@
 
   /* Mobile Filters  */
 
-
-
   .hero-cyrcle1 {
     position: absolute;
     top: 50%;
@@ -796,6 +798,275 @@
     opacity: 0.6;
     z-index: -24;
 
+  }
+
+}
+
+
+@media screen and (min-width: 376px) and (max-width: 767px) {
+
+  .box {
+    display: flex;
+    flex-direction: column-reverse;
+    /* gap: 40px; */
+
+  }
+
+  .hero-sibscribe-container {
+
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-title {
+
+    max-width: 304px;
+    width: 100%;
+    /* height: 120px; */
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -1.62px;
+
+  }
+
+  .hero-title-grey {
+    font-family: DMSans-tp;
+    background: linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: -1.62px;
+
+  }
+
+  .hero-item {
+    /* all: unset; */
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.32px;
+    margin-top: 14px;
+    margin-bottom: 24px;
+  }
+
+  .hero-buttons-container {
+    display: flex;
+    gap: 11px;
+    align-items: center;
+    color: #F6F5EF;
+
+  }
+
+  /* .hero-btn-get {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: auto;
+    border-radius: 60px;
+    min-width: 130px;
+    height: 43px;
+    font-size: 14px;
+    background: var(--light-green, #93ABAE);
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: -0.63px;
+    color: var(--white, #F6F5EF);
+  } */
+
+
+  /* New Bottom Swimming */
+
+
+  .hero-buttons-container .liquid-btn {
+    position: relative;
+    display: block;
+    min-width: 130px;
+    height: 43px;
+    border-radius: 60px;
+    background-color: transparent;
+    text-align: center;
+    padding: 12px 24px;
+    overflow: hidden;
+  }
+
+  .liquid-btn .liquid-s {
+    position: relative;
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.63px;
+    z-index: 1;
+  }
+
+
+  .hero-btn-explore {
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    padding: auto;
+    min-width: 104px;
+    height: 43px;
+    font-size: 14px;
+    border-radius: 60px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: -0.63px;
+    border: 1px solid var(--white, #F6F5EF);
+  }
+
+  /* Box background */
+
+  .hero-photos {
+    /* all: unset; */
+    /* position: relative; */
+    margin-left: -32px;
+    padding-bottom: 480px;
+
+  }
+
+  .box-background {
+
+    max-width: 335px;
+    max-height: 427px;
+    top: 64px;
+    left: 22px;
+    z-index: -8;
+    position: absolute;
+  }
+
+
+  /* Boss & Yacht photos block  */
+
+  .box-client1 {
+    width: 48px;
+    top: 82px;
+    left: 46px;
+    z-index: -1;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .box-client2 {
+    max-width: 48px;
+    top: 82px;
+    left: 86px;
+    z-index: -2;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .box-client3 {
+    max-width: 48px;
+    top: 82px;
+    left: 126px;
+    z-index: -3;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .our-clients {
+    /* min-width: 46px; */
+    color: #11131F;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.56px;
+    text-transform: uppercase;
+    position: absolute;
+
+    top: 143px;
+    left: 46px;
+    z-index: 2;
+  }
+
+  /* Boss & Yacht photos block  */
+
+  .box-yacht {
+    top: 229px;
+    left: 46px;
+    max-width: 287px;
+    height: 167px;
+    z-index: -5;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .box-boss {
+    top: 96px;
+    left: 234px;
+    max-width: 133px;
+    height: auto;
+    z-index: -4;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+  .cost {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    max-width: 287px;
+    top: 392px;
+    left: 56px;
+    position: absolute;
+  }
+
+  .cost-price {
+    color: #11131F;
+    font-size: 48px;
+    letter-spacing: -2.16px;
+    text-transform: uppercase;
+  }
+
+  .cost-strong {
+    color: #11131F;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: -0.63px;
+
+  }
+
+  /* Mobile Filters  */
+
+  .hero-cyrcle1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-105%, -40%);
+    width: 279px;
+    height: 279px;
+    background: #939CAC;
+    filter: blur(100px);
+    border-radius: 279px;
+    opacity: 0.9;
+    z-index: -25;
+
+  }
+
+  .hero-cyrcle2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-145%, -70%);
+    width: 279px;
+    height: 279px;
+    background: #91AFBA;
+    filter: blur(100px);
+    border-radius: 279px;
+    opacity: 0.6;
+    z-index: -24;
 
   }
 

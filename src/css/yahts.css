@@ -86,6 +86,7 @@
   height: 316px;
   opacity: 0.3;
 }
+/*============================|Liquid-btn|===========================*/
 .liquid-btn {
   position: relative;
   display: block;
@@ -98,7 +99,6 @@
   cursor: pointer;
   overflow: hidden;
 }
-
 .liquid-btn .liquid-s {
   position: relative;
   color: var(--white);
@@ -108,7 +108,6 @@
   letter-spacing: -0.63px;
   z-index: 1;
 }
-
 .liquid-btn .liquid {
   position: absolute;
   top: -80px;
@@ -119,7 +118,6 @@
   box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
   transition: 0.5s;
 }
-
 .liquid-btn .liquid::after,
 .liquid-btn .liquid::before {
   content: '';
@@ -131,23 +129,19 @@
   transform: translate(-50%, -75%);
   background: #000;
 }
-
 .liquid-btn .liquid::before {
   border-radius: 45%;
   background: rgba(20, 20, 20, 1);
   animation: animate 5s linear infinite;
 }
-
 .liquid-btn .liquid::after {
   border-radius: 40%;
   background: rgba(20, 20, 20, 0.5);
   animation: animate 10s linear infinite;
 }
-
 .liquid-btn:hover .liquid {
   top: -120px;
 }
-
 @keyframes animate {
   0% {
     transform: translate(-50%, -75%) rotate(0deg);
@@ -202,10 +196,10 @@
   background-color: var(--blue);
   width: 335px;
 }
-.yacht-card:hover > .picture-box img,
+/* .yacht-card:hover > .picture-box img,
 .yacht-card:focus > .picture-box img {
   transform: scale(1.1);
-}
+} */
 .picture-box {
   border-radius: 26px;
   overflow: hidden;

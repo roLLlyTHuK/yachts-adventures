@@ -16,7 +16,6 @@
     padding-bottom: 164px;
   }
 }
-
 @media only screen and (min-width: 1280px) {
   .adventures-title-container {
     display: flex;
@@ -41,21 +40,25 @@
   margin-bottom: 24px;
 }
 
-button {
-  font-family: inherit;
-  line-height: inherit;
-  cursor: pointer;
-  padding: 0;
-  outline: none;
-  color: currentColor;
-}
-
 .button-box {
-  width: 19px;
+  width: 60px;
   margin: 0 auto;
   position: relative;
 }
 
+.button-reviews {
+  width: 13px;
+  height: 13px;
+  background-color: #1f212d;
+  margin: 0;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.button-reviews:hover,
+.button-reviews:focus {
+  background-color: #88b3b9;
+}
 @media only screen and (min-width: 375px) {
   .adventures-title {
     width: 335px;
@@ -77,10 +80,13 @@ button {
 }
 
 .adventure-title-gray {
-  background: var(--linear-green, linear-gradient(107deg, #bec7c2 0%, #a1b5ba 100%));
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-family: DM Sans;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -1.08px;
+  color: linear green;
 }
 
 .adventures-title-item {
@@ -163,12 +169,11 @@ button {
   text-align: center;
   flex-direction: column;
   border-radius: 24px;
-  background: #1F212D;
+  background: #1f212d;
   width: 384px;
   height: 282px;
   padding: 32px;
 }
-
 
 @media only screen and (min-width: 375px) {
   .adventures-list-item {
@@ -215,14 +220,13 @@ button {
 .adventures-list-item-title {
   color: #f6f5ef;
   text-align: center;
-
   font-style: normal;
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: -0.04em;
-
   margin-top: 18px;
   margin-bottom: 8px;
+  width: 497px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -235,15 +239,12 @@ button {
 .adventures-list-item-text {
   color: rgba(246, 245, 239, 0.5);
   text-align: center;
-
   font-size: 12px;
   font-weight: 400;
   line-height: 1.4;
   letter-spacing: -0.02em;
-
   padding: 0 3.5px;
-
-  width: 100%;
+  width: 273px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -256,5 +257,50 @@ button {
 @media only screen and (min-width: 768px) {
   .adventures-list-item-text {
     padding: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .adventures-text {
+    margin-bottom: 64px;
+  }
+  .button-box {
+    display: flex;
+    margin-top: 32px;
+    gap: 10px;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .button-box {
+    display: none;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .button-box {
+    margin-top: 14px;
+    padding-bottom: 100px;
+  }
+  .adventures-title {
+    width: 335px;
+    font-family: DM Sans;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -1.08px;
+    margin-bottom: 24px;
+  }
+  .adventure-title-gray {
+    font-style: italic;
+  }
+  .adventures-text {
+    width: 335px;
+    color: var(--white, #f6f5ef);
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.28px;
   }
 }

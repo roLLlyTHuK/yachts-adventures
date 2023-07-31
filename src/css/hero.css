@@ -187,7 +187,7 @@
 
 }
 
-.hero-btn-get {
+/* .hero-btn-get {
 
   display: inline-flex;
   justify-content: center;
@@ -195,16 +195,102 @@
   border: none;
   padding: auto;
   border-radius: 60px;
-  min-width: 150px;
-  height: 48px;
+  max-width: 150px;
   font-size: 18px;
+  height: 48px;
   letter-spacing: -0.81px;
-  background: var(--light-green, #93ABAE);
   font-weight: 700;
   line-height: 110%;
+  background: var(--light-green, #93ABAE);
   color: var(--white, #F6F5EF);
+} */
 
+/**
+  |============================
+  | New Button
+  |============================
+*/
+
+.liquid-btn {
+  position: relative;
+  display: block;
+  max-width: 150px;
+
+  border: 1px solid var(--white);
+  border-radius: 60px;
+  background-color: transparent;
+  text-align: center;
+  padding: 12px 24px;
+
+  overflow: hidden;
 }
+
+.liquid-btn .liquid-s {
+  position: relative;
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.63px;
+  z-index: 1;
+}
+
+.liquid-btn .liquid {
+  position: absolute;
+  top: -80px;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background: #93abae;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+
+.liquid-btn .liquid::after,
+.liquid-btn .liquid::before {
+  content: '';
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  background: #000;
+}
+
+.liquid-btn .liquid::before {
+  border-radius: 45%;
+  background: rgba(20, 20, 20, 1);
+  animation: animate 5s linear infinite;
+}
+
+.liquid-btn .liquid::after {
+  border-radius: 40%;
+  background: rgba(20, 20, 20, 0.5);
+  animation: animate 10s linear infinite;
+}
+
+.liquid-btn:hover {
+  border-color: #88b3b9;
+}
+
+.liquid-btn:hover .liquid {
+  top: -120px;
+  background-color: #88b3b9;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
+}
+
+
+/* Second Button  */
 
 .hero-btn-explore {
   padding: 14px 28px;

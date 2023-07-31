@@ -215,14 +215,15 @@
   position: relative;
   display: block;
   max-width: 150px;
-
-  border: 1px solid var(--white);
+  letter-spacing: -0.81px;
   border-radius: 60px;
+  font-weight: 700;
+  line-height: 110%;
   background-color: transparent;
   text-align: center;
   padding: 12px 24px;
-
   overflow: hidden;
+  /* border: 1px solid var(--white); */
 }
 
 .liquid-btn .liquid-s {
@@ -590,7 +591,7 @@
 
   }
 
-  .hero-btn-get {
+  /* .hero-btn-get {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -605,8 +606,30 @@
     line-height: 110%;
     letter-spacing: -0.63px;
     color: var(--white, #F6F5EF);
+  } */
 
+  .hero-buttons-container.liquid-btn {
+    position: relative;
+    display: block;
+    min-width: 130px;
+    height: 43px;
+    border-radius: 60px;
+    background-color: transparent;
+    text-align: center;
+    padding: 12px 24px;
+    overflow: hidden;
   }
+
+  .liquid-btn .liquid-s {
+    position: relative;
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.63px;
+    z-index: 1;
+  }
+
 
   .hero-btn-explore {
     display: inline-flex;

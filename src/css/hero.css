@@ -187,7 +187,7 @@
 
 }
 
-.hero-btn-get {
+/* .hero-btn-get {
 
   display: inline-flex;
   justify-content: center;
@@ -195,16 +195,103 @@
   border: none;
   padding: auto;
   border-radius: 60px;
-  min-width: 150px;
-  height: 48px;
+  max-width: 150px;
   font-size: 18px;
+  height: 48px;
   letter-spacing: -0.81px;
-  background: var(--light-green, #93ABAE);
   font-weight: 700;
   line-height: 110%;
+  background: var(--light-green, #93ABAE);
   color: var(--white, #F6F5EF);
+} */
 
+/**
+  |============================
+  | New Button
+  |============================
+*/
+
+.liquid-btn {
+  position: relative;
+  display: block;
+  max-width: 150px;
+  letter-spacing: -0.81px;
+  border-radius: 60px;
+  font-weight: 700;
+  line-height: 110%;
+  background-color: transparent;
+  text-align: center;
+  padding: 12px 24px;
+  overflow: hidden;
+  /* border: 1px solid var(--white); */
 }
+
+.liquid-btn .liquid-s {
+  position: relative;
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.63px;
+  z-index: 1;
+}
+
+.liquid-btn .liquid {
+  position: absolute;
+  top: -80px;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background: #93abae;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+
+.liquid-btn .liquid::after,
+.liquid-btn .liquid::before {
+  content: '';
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  background: #000;
+}
+
+.liquid-btn .liquid::before {
+  border-radius: 45%;
+  background: rgba(20, 20, 20, 1);
+  animation: animate 5s linear infinite;
+}
+
+.liquid-btn .liquid::after {
+  border-radius: 40%;
+  background: rgba(20, 20, 20, 0.5);
+  animation: animate 10s linear infinite;
+}
+
+.liquid-btn:hover {
+  border-color: #88b3b9;
+}
+
+.liquid-btn:hover .liquid {
+  top: -120px;
+  background-color: #88b3b9;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
+}
+
+
+/* Second Button  */
 
 .hero-btn-explore {
   padding: 14px 28px;
@@ -446,7 +533,8 @@
 
 /* Mobile adaptation  */
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
 
   .box {
     display: flex;
@@ -504,7 +592,7 @@
 
   }
 
-  .hero-btn-get {
+  /* .hero-btn-get {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -519,8 +607,34 @@
     line-height: 110%;
     letter-spacing: -0.63px;
     color: var(--white, #F6F5EF);
+  } */
 
+
+  /* New Bottom Swimming */
+
+
+  .hero-buttons-container .liquid-btn {
+    position: relative;
+    display: block;
+    min-width: 130px;
+    height: 43px;
+    border-radius: 60px;
+    background-color: transparent;
+    text-align: center;
+    padding: 12px 24px;
+    overflow: hidden;
   }
+
+  .liquid-btn .liquid-s {
+    position: relative;
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.63px;
+    z-index: 1;
+  }
+
 
   .hero-btn-explore {
     display: inline-flex;
@@ -549,8 +663,8 @@
 
   .box-background {
 
-    max-width: 335px;
-    max-height: 427px;
+    width: 335px;
+    height: 427px;
     top: 64px;
     left: 22px;
     z-index: -8;
@@ -657,8 +771,6 @@
 
   /* Mobile Filters  */
 
-
-
   .hero-cyrcle1 {
     position: absolute;
     top: 50%;
@@ -687,6 +799,244 @@
     opacity: 0.6;
     z-index: -24;
 
+  }
+
+}
+
+@media screen and (max-width: 374px) {
+  .box {
+    display: flex;
+    flex-direction: column-reverse;
+    /* gap: 40px; */
+
+  }
+
+  .hero-sibscribe-container {
+
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-title {
+
+    max-width: 304px;
+    width: 100%;
+    /* height: 120px; */
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -1.62px;
+
+  }
+
+  .hero-title-grey {
+    font-family: DMSans-tp;
+    background: linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: -1.62px;
+
+  }
+
+  .hero-item {
+    /* all: unset; */
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.32px;
+    margin-top: 14px;
+    margin-bottom: 24px;
+  }
+
+  .hero-buttons-container {
+    display: flex;
+    gap: 11px;
+    align-items: center;
+    color: #F6F5EF;
+
+  }
+
+  /* .hero-btn-get {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: auto;
+    border-radius: 60px;
+    min-width: 130px;
+    height: 43px;
+    font-size: 14px;
+    background: var(--light-green, #93ABAE);
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: -0.63px;
+    color: var(--white, #F6F5EF);
+  } */
+
+
+  /* New Bottom Swimming */
+
+
+  .hero-buttons-container .liquid-btn {
+    position: relative;
+    display: block;
+    min-width: 130px;
+    height: 43px;
+    border-radius: 60px;
+    background-color: transparent;
+    text-align: center;
+    padding: 12px 24px;
+    overflow: hidden;
+  }
+
+  .liquid-btn .liquid-s {
+    position: relative;
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.63px;
+    z-index: 1;
+  }
+
+
+  .hero-btn-explore {
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    padding: auto;
+    min-width: 104px;
+    height: 43px;
+    font-size: 14px;
+    border-radius: 60px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: -0.63px;
+    border: 1px solid var(--white, #F6F5EF);
+  }
+
+  /* Box background */
+
+  .hero-photos {
+    /* all: unset; */
+    /* position: relative; */
+    width: 80vw;
+    height: 427px;
+
+    padding-bottom: 480px;
+
+  }
+
+  .box-background {
+
+    width: 80vw;
+    height: auto;
+
+  }
+
+
+  /* Boss & Yacht photos block  */
+
+  .box-client1 {
+    width: 48px;
+    top: 82px;
+    left: 8vw;
+
+  }
+
+  .box-client2 {
+    width: 48px;
+    top: 82px;
+    left: 20vw;
+  }
+
+  .box-client3 {
+    width: 48px;
+    top: 82px;
+    left: 32vw;
+  }
+
+  .our-clients {
+    top: 45vw;
+
+
+  }
+
+  /* Boss & Yacht photos block  */
+
+  .box-yacht {
+    top: 66vw;
+    left: 12vw;
+    width: auto;
+    height: 100px;
+
+  }
+
+  .box-boss {
+
+    left: 52vw;
+    width: auto;
+    height: 100px;
+
+  }
+
+  .cost {
+
+    width: auto;
+    top: 105vw;
+    left: 6vw;
+    height: 40px;
+
+  }
+
+  .cost-price {
+    color: #11131F;
+    font-size: 48px;
+    letter-spacing: -2.16px;
+    text-transform: uppercase;
+  }
+
+  .cost-strong {
+    color: #11131F;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: -0.63px;
+
+  }
+
+  /* Mobile Filters  */
+
+  .hero-cyrcle1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-105%, -40%);
+    width: 279px;
+    height: 279px;
+    background: #939CAC;
+    filter: blur(100px);
+    border-radius: 279px;
+    opacity: 0.9;
+    z-index: -25;
+
+  }
+
+  .hero-cyrcle2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-145%, -70%);
+    width: 279px;
+    height: 279px;
+    background: #91AFBA;
+    filter: blur(100px);
+    border-radius: 279px;
+    opacity: 0.6;
+    z-index: -24;
 
   }
 

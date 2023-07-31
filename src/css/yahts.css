@@ -1,4 +1,7 @@
 /*============================|top side|===========================*/
+#yahts {
+  padding-bottom: 100px;
+}
 .yachts-box {
   display: block;
 }
@@ -25,10 +28,8 @@
   margin-bottom: 40px;
   z-index: 10;
 }
-.yacht-rent-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* .yacht-rent-btn {
+  display: block;
   width: 130px;
   border: 1px solid var(--white);
   border-radius: 60px;
@@ -38,15 +39,15 @@
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.63px;
-  text-align: center;
-  padding: 12px;
+  padding: 12px 24px;
   cursor: pointer;
 }
 .yacht-rent-btn:hover,
 .yacht-rent-btn:focus {
   color: var(--light-green);
   border: 1px solid var(--light-green);
-}
+} */
+
 /*==========================|Light+vectors|=========================*/
 .vectors {
   display: none;
@@ -85,17 +86,78 @@
   height: 316px;
   opacity: 0.3;
 }
+/*============================|Liquid-btn|===========================*/
+.liquid-btn {
+  position: relative;
+  display: block;
+  width: 130px;
+  border: 1px solid var(--white);
+  border-radius: 60px;
+  background-color: transparent;
+  text-align: center;
+  padding: 12px 24px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.liquid-btn .liquid-s {
+  position: relative;
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.63px;
+  z-index: 1;
+}
+.liquid-btn .liquid {
+  position: absolute;
+  top: -80px;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background: #4973ff;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+.liquid-btn .liquid::after,
+.liquid-btn .liquid::before {
+  content: '';
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  background: #000;
+}
+.liquid-btn .liquid::before {
+  border-radius: 45%;
+  background: rgba(20, 20, 20, 1);
+  animation: animate 5s linear infinite;
+}
+.liquid-btn .liquid::after {
+  border-radius: 40%;
+  background: rgba(20, 20, 20, 0.5);
+  animation: animate 10s linear infinite;
+}
+.liquid-btn:hover .liquid {
+  top: -120px;
+}
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
+}
 /*============================|gallery|===========================*/
 .yacht-gallery {
   position: relative;
   margin: 0 auto;
 }
-.yacht-gallery .swiper {
-  width: 100%;
-}
 .gallery-btn {
   position: absolute;
-  bottom: -50px;
+  bottom: -65px;
   left: 50%;
   transform: translate(-50%, 0);
   display: flex;
@@ -132,12 +194,12 @@
   padding: 16px 16px 32px;
   border-radius: 8%;
   background-color: var(--blue);
-  width: 334px;
+  width: 335px;
 }
-.yacht-card:hover > .picture-box img,
+/* .yacht-card:hover > .picture-box img,
 .yacht-card:focus > .picture-box img {
   transform: scale(1.1);
-}
+} */
 .picture-box {
   border-radius: 26px;
   overflow: hidden;
@@ -189,16 +251,19 @@
   }
 }
 @media only screen and (min-width: 768px) {
+  #yahts {
+    padding-bottom: 118px;
+  }
   .yacht-title-box {
     width: 640px;
     margin-bottom: 100px;
   }
   .gallery-btn {
-    bottom: -54px;
+    bottom: -73px;
     width: 116px;
   }
   .yacht-card {
-    width: 350px;
+    width: 340px;
   }
   .yacht-title-h2 {
     font-size: 70px;
@@ -208,6 +273,9 @@
   }
 }
 @media only screen and (min-width: 1280px) {
+  #yahts {
+    padding-bottom: 82px;
+  }
   .yachts-box {
     position: relative;
   }

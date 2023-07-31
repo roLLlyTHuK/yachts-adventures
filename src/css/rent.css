@@ -1,4 +1,4 @@
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 767px) {
   .section {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -33,7 +33,7 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 767px) {
   .rent-txt {
     width: 271px;
   }
@@ -96,7 +96,7 @@ display: flex;
 
     
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .rent-form-row {
     align-items: center;
   }
@@ -114,15 +114,14 @@ display: flex;
   border-radius: 0;
   
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
   .rent-form-row input,
   .rent-form-row textarea {
-    width: 335px;
+    max-width: 335px;
       height: 1px;
       color: #fff;
   }
-    
 }
 
 

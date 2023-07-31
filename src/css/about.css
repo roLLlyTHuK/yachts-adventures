@@ -194,7 +194,7 @@
   position: absolute;
   bottom: calc(-20px - 65vw);
   right: 20px;
-  width: 69vw;
+  width: calc((100vw - 40px) * 0.78);
 }
 @media only screen and (min-width: 375px) {
   .about-image3-container {

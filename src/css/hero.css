@@ -533,7 +533,8 @@
 
 /* Mobile adaptation  */
 
-@media screen and (min-width: 320px) and (max-width: 375px) {
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
 
   .box {
     display: flex;
@@ -662,8 +663,8 @@
 
   .box-background {
 
-    max-width: 335px;
-    max-height: 427px;
+    width: 335px;
+    height: 427px;
     top: 64px;
     left: 22px;
     z-index: -8;
@@ -802,9 +803,7 @@
 
 }
 
-
-@media screen and (min-width: 376px) and (max-width: 767px) {
-
+@media screen and (max-width: 374px) {
   .box {
     display: flex;
     flex-direction: column-reverse;
@@ -925,19 +924,18 @@
   .hero-photos {
     /* all: unset; */
     /* position: relative; */
-    margin-left: -32px;
+    width: 80vw;
+    height: 427px;
+
     padding-bottom: 480px;
 
   }
 
   .box-background {
 
-    max-width: 335px;
-    max-height: 427px;
-    top: 64px;
-    left: 22px;
-    z-index: -8;
-    position: absolute;
+    width: 80vw;
+    height: auto;
+
   }
 
 
@@ -974,41 +972,24 @@
   }
 
   .our-clients {
-    /* min-width: 46px; */
-    color: #11131F;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 0.56px;
-    text-transform: uppercase;
-    position: absolute;
-
-    top: 143px;
-    left: 46px;
-    z-index: 2;
+    width: 80vw;
+    height: auto;
   }
 
   /* Boss & Yacht photos block  */
 
   .box-yacht {
-    top: 229px;
-    left: 46px;
-    max-width: 287px;
+    width: 80vw;
     height: 167px;
-    z-index: -5;
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: cover;
+
   }
 
   .box-boss {
-    top: 96px;
-    left: 234px;
-    max-width: 133px;
-    height: auto;
-    z-index: -4;
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+
+    left: 35vw;
+    height: 100px;
+
 
   }
 

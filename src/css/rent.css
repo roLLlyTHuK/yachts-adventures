@@ -1,22 +1,59 @@
-
-.img-box{
-  display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: 64px;
+@media only screen and (min-width: 768px) {
+  .section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 
+@media only screen and (min-width: 1280px) {
+  .section {
+    padding-top: 164px;
+    padding-bottom: 164px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .rent-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 64px;
+  }
+}
+.img-box{
+  display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 64px;
+    
+}
+@media only screen and (min-width: 375px) {
+  .img-box {
+    width: 335px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .rent-txt {
+    width: 271px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .rent-txt {
+    margin: 0;
+  }
+}
 .rent-txt{
-
-color:#F6F5EF;
-
-  font-family: DM Sans;
-    font-size: 60px;
-    font-weight: 500;
-    line-height: 66px;
-    letter-spacing: -0.045em;
-    text-align: left;
-  
+color: #F6F5EF;
+  width: 282px;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  /* 66px */
+  letter-spacing: -2.7px;
+  margin-bottom: 64px;
 }
 .rent-image-container{
   width: 282px;
@@ -24,11 +61,24 @@ color:#F6F5EF;
     fill: url(<path-to-image>), lightgray 50% / cover no-repeat;
 }
 
+
+@media only screen and (min-width: minwidthpx) {
+  .rent-image-container {
+    width: 259px;
+      height: 187px;
+  }
+}
+
 /* Rent Form */
  ::placeholder {
    color: white;
  }
-
+.rent-form{
+  display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+}
 .form-box{
   display: flex;
     flex-direction: column;
@@ -38,23 +88,41 @@ color:#F6F5EF;
 }
 .rent-form-row{
   
-
+display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: transparent;
+  position: relative;
 
     
 }
+@media (max-width: 768px) {
+  .rent-form-row {
+    align-items: center;
+  }
+}
 .rent-form-row input,
 .rent-form-row textarea {
+  width: 100%;
   width: 443px;
   padding: 8px;
   border: none;
-  /*  границі */
   border-radius: 4px;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #ccc;
   border-radius: 0;
-  color: #fff;
   
+}
+@media (max-width: 768px) {
+
+  .rent-form-row input,
+  .rent-form-row textarea {
+    width: 335px;
+      height: 1px;
+      color: #fff;
+  }
+    
 }
 
 
@@ -81,21 +149,9 @@ color:#F6F5EF;
   fill:#f6f5ef ;
 }
 
-/* Стилі для мобільних пристроїв і екранів з шириною від 0 до 375px */
-@media (max-width: 375px) {
-  .rent-image-container img {
-    max-width: 100%;
-    height: auto;
-  }
-}
 
-/* Стилі для планшетів і екранів з шириною від 768px до 1279px */
-@media (min-width: 768px) and (max-width: 1279px) {
-  .rent-image-container img {
-    max-width: 100%;
-    height: auto;
-  }
-}
+
+
 
 /* Стилі для десктопних пристроїв з шириною екрану від 1280px і більше */
 @media (min-width: 1280px) {

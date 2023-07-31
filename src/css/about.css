@@ -212,5 +212,5 @@
 
 .about-image3 {
   -webkit-mask-image: linear-gradient(0deg, transparent 0%, #11131f 100%);
-  /* mask-image: linear-gradient(180deg, transparent 0%, #11131f 100%); */
+  mask-image: linear-gradient(0deg, transparent 0%, #11131f 100%);
 }

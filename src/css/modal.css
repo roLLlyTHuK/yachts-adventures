@@ -24,11 +24,13 @@
   transition: 0.3s all;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
   .modal {
     width: 335px;
       height: 396px;
+      border-radius: 20px;
+        background: #1F212D;
   }
 
 }
@@ -76,7 +78,7 @@
     line-height: 140%;
     letter-spacing: -0.32px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
   .rent-modal-txt {
     width: 287px;
@@ -103,7 +105,7 @@
   
     letter-spacing: -1.44px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
   .modal-h {
   width: 282px;
@@ -129,7 +131,7 @@
     display: flex;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
   .thumb-rent {
   display: inline-flex;
@@ -145,7 +147,7 @@
     flex-shrink: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
   .rent-modal-image {
   width: 287px;

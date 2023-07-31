@@ -944,64 +944,53 @@
   .box-client1 {
     width: 48px;
     top: 82px;
-    left: 46px;
-    z-index: -1;
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: cover;
+    left: 8vw;
+
   }
 
   .box-client2 {
-    max-width: 48px;
+    width: 48px;
     top: 82px;
-    left: 86px;
-    z-index: -2;
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: cover;
+    left: 20vw;
   }
 
   .box-client3 {
-    max-width: 48px;
+    width: 48px;
     top: 82px;
-    left: 126px;
-    z-index: -3;
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: cover;
+    left: 32vw;
   }
 
   .our-clients {
-    width: 80vw;
-    height: auto;
+    top: 45vw;
+
+
   }
 
   /* Boss & Yacht photos block  */
 
   .box-yacht {
-    width: 80vw;
-    height: 167px;
+    top: 66vw;
+    left: 12vw;
+    width: auto;
+    height: 100px;
 
   }
 
   .box-boss {
 
-
-    left: 35vw;
+    left: 52vw;
+    width: auto;
     height: 100px;
-
 
   }
 
   .cost {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 14px;
-    max-width: 287px;
-    top: 392px;
-    left: 56px;
-    position: absolute;
+
+    width: auto;
+    top: 105vw;
+    left: 6vw;
+    height: 40px;
+
   }
 
   .cost-price {

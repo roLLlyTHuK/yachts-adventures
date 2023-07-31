@@ -1,9 +1,9 @@
 #scrollToTopButton {
   position: fixed;
   z-index: 999;
-  bottom: 368px;
-  left: 50%;
-  transform: translate(123px, 0);
+  bottom: 20px;
+  right: 5vw;
+
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -18,17 +18,22 @@
   border: none;
   border-radius: 8px;
 }
+@media only screen and (min-width: 375px) {
+  #scrollToTopButton {
+    left: 50%;
+    transform: translate(123px, 0);
+  }
+}
 @media only screen and (min-width: 768px) {
   #scrollToTopButton {
     width: 68px;
     height: 68px;
-    bottom: 328px;
+    bottom: 32px;
     transform: translate(284px, 0);
   }
 }
 @media only screen and (min-width: 1280px) {
   #scrollToTopButton {
-    bottom: 332px;
     transform: translate(540px, 0);
   }
 }

@@ -16,7 +16,7 @@ const swiper = new Swiper('.swiper', {
     // when window width is >= 768px
     768: {
       slidesPerView: 2,
-      spaceBetween:4
+      spaceBetween:8
     },
     // when window width is >= 1280px
     1280: {
@@ -29,7 +29,7 @@ const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
-  autoHeight: true,
+  // autoHeight: true,
 
   // If we need pagination
   pagination: {

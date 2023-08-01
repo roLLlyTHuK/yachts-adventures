@@ -1,14 +1,9 @@
-.header {
-  background-color: var(--dark-blue);
-}
-
 .mobail-div-two {
   border-bottom: 1px solid rgb(170, 166, 166, 0.4);
   display: flex;
 }
 
 .header-nav {
-  all: unset;
   display: flex;
   width: 100%;
   margin: 27px 0;
@@ -32,7 +27,6 @@
 }
 
 .header-logo {
-  all: unset;
   color: var(--white);
   font-family: DMSans-tp, sans-serif;
   font-size: 14px;
@@ -46,13 +40,13 @@
   align-items: center;
   cursor: pointer;
 }
+
 .header-logo:hover,
 .header-logo:focus {
   color: var(--light-green);
 }
 @media (min-width: 768px) {
   .header-logo {
-    all: unset;
     color: var(--white);
     font-family: DMSans-tp, sans-serif;
     font-size: 18px;
@@ -68,7 +62,6 @@
   }
 }
 .header-links {
-  all: unset;
   color: var(--white);
   font-family: DMSans-tp, sans-serif;
   font-size: 14px;

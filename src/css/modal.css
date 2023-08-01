@@ -23,6 +23,20 @@
   background: #1F212D;
   transition: 0.3s all;
 }
+.modal::after{
+  content: '';
+  width: 142x;
+  height: 142px;
+  top: 75px;
+  left: 96px;
+  background: #91AFBA;
+  opacity: 0.6000000238418579;
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  transform: rotate(-0.158deg);
+  z-index: -1;
+}
 
 @media (max-width: 767px) {
 
@@ -142,6 +156,7 @@
 
 }
 .rent-modal-image{
+  display: flex;
   width: 338px;
     height: 198px;
     flex-shrink: 0;

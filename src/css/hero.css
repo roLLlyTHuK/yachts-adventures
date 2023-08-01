@@ -4,16 +4,6 @@
   z-index: -10; */
 }
 
-
-/* @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-          .hero {
-            background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg/bg_pc@2x.jpg);
-            background-size: cover;
-          } */
-
-
 /**
   |============================
   | Photos
@@ -193,8 +183,7 @@
   justify-content: center;
   align-items: center;
   border: none;
-  padding: auto;
-  border-radius: 60px;
+   border-radius: 60px;
   max-width: 150px;
   font-size: 18px;
   height: 48px;
@@ -597,7 +586,6 @@
     justify-content: center;
     align-items: center;
     border: none;
-    padding: auto;
     border-radius: 60px;
     min-width: 130px;
     height: 43px;
@@ -610,7 +598,7 @@
   } */
 
 
-  /* New Bottom Swimming */
+  /* New Button Swimming */
 
 
   .hero-buttons-container .liquid-btn {
@@ -640,7 +628,6 @@
     display: inline-flex;
     justify-content: center;
     text-align: center;
-    padding: auto;
     min-width: 104px;
     height: 43px;
     font-size: 14px;
@@ -705,7 +692,7 @@
   }
 
   .our-clients {
-    /* min-width: 46px; */
+
     color: #11131F;
     font-size: 14px;
     font-weight: 700;
@@ -807,7 +794,6 @@
   .box {
     display: flex;
     flex-direction: column-reverse;
-    /* gap: 40px; */
 
   }
 
@@ -865,7 +851,6 @@
     justify-content: center;
     align-items: center;
     border: none;
-    padding: auto;
     border-radius: 60px;
     min-width: 130px;
     height: 43px;
@@ -878,7 +863,7 @@
   } */
 
 
-  /* New Bottom Swimming */
+  /* New Button Swimming */
 
 
   .hero-buttons-container .liquid-btn {
@@ -908,7 +893,6 @@
     display: inline-flex;
     justify-content: center;
     text-align: center;
-    padding: auto;
     min-width: 104px;
     height: 43px;
     font-size: 14px;
@@ -926,7 +910,6 @@
     /* position: relative; */
     width: 80vw;
     height: 427px;
-
     padding-bottom: 480px;
 
   }

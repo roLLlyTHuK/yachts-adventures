@@ -1,5 +1,5 @@
-import 'button-to-top'
-import 'swiper-slider'
-import 'mobile-menu'
-import 'modal'
+import './js/button-to-top';
+import './js/swiper-slider';
+// import './js/mobile-menu';
+// import './js/modal';
 

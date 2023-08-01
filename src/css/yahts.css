@@ -67,7 +67,7 @@
   border-radius: 50%;
   background: #91afba;
   filter: blur(100px);
-  z-index: 5;
+  z-index: 3;
 }
 .yacht-title-box::before {
   top: -43px;

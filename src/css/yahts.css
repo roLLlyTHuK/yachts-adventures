@@ -6,6 +6,7 @@
   display: block;
 }
 .yacht-title-box {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -56,32 +57,34 @@
   top: 90px;
   left: 0px;
   width: 100%;
-  opacity: 0.2;
+  opacity: 0.1;
   z-index: -1;
 }
-.title-light::before,
-.title-light::after {
+.yacht-title-box::before,
+.yacht-title-box::after {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
   border-radius: 50%;
   background: #91afba;
   filter: blur(100px);
   z-index: 5;
 }
-.title-light::before {
-  transform: translate(10%, -12%);
+.yacht-title-box::before {
+  top: -43px;
+  left: -80px;
+
   width: 225px;
   height: 225px;
-  opacity: 0.6;
+  opacity: 6;
 }
-.title-light::after {
-  transform: translate(60%, -10%);
+.yacht-title-box::after {
+  top: -29px;
+  left: 138px;
   width: 195px;
   height: 195px;
-  opacity: 0.3;
+  opacity: 3;
 }
+
 /*============================|gallery|===========================*/
 .yacht-gallery {
   position: relative;
@@ -208,14 +211,16 @@
     line-height: 1.1;
     margin-bottom: 64px;
   }
-  .title-light::before {
-    transform: translate(-5%, -12%);
+  .yacht-title-box::before {
+    top: -92px;
+    left: -30px;
     width: 399px;
     height: 399px;
     opacity: 0.6;
   }
-  .title-light::after {
-    transform: translate(110%, -10%);
+  .yacht-title-box::after {
+    top: -69px;
+    left: 382px;
     width: 304px;
     height: 304px;
     opacity: 0.3;
@@ -251,14 +256,16 @@
   .vectors {
     display: block;
   }
-  .title-light::before {
-    transform: translate(10%, -12%);
+  .yacht-title-box::before {
+    top: -70px;
+    left: 60px;
     width: 414px;
     height: 414px;
     opacity: 0.6;
   }
-  .title-light::after {
-    transform: translate(160%, -10%);
+  .yacht-title-box::after {
+    top: -39px;
+    left: 535px;
     width: 316px;
     height: 316px;
     opacity: 0.3;

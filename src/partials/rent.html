@@ -2,31 +2,34 @@
 <section id="rent" class="section">
     <div class="rent-container container">
         <div class="img-box">
-        <h2 class="rent-txt">Rent a yacht now</h2>
-            <img class="rent-image-container" srcset="./img/rent/img-1@1x.png, ./img/rent/img-1@2x.png" src="./img/rent/rentyaht.png" alt="Yaht">
+            <h2 class="rent-txt">Rent a yacht now</h2>
+            <img class="rent-image-container" srcset="./img/rent/img-1@1x.png, ./img/rent/img-1@2x.png"
+                src="./img/rent/rentyaht.png" alt="Yaht">
         </div>
-<!-- Rent Form -->
+        <!-- Rent Form -->
         <form id="contactForm" class="rent-form">
-            <div class="form-box">
-               
             <div class="rent-form-row">
-            <input type="text" placeholder="Full Name">
+                <input type="text" id="username" name="username" required="" />
+                <label for="username">Full name</label>
             </div>
             <div class="rent-form-row">
-                <input type="email" placeholder="Email">
+                <input type="email" id="email" name="email" required="" />
+                <label for="email">Email</label>
             </div>
             <div class="rent-form-row">
-                <input type="number" placeholder="Phone Number">
+                <input type="tel" id="phone" name="phone" required="" />
+                <label for="phone">Phone number</label>
             </div>
             <div class="rent-form-row">
-                <input type="text" placeholder="Comment">
+                <input type="text" id="comments" name="comments" required="" />
+                <label for="comments">Comment</label>
             </div>
-            <button class="rent-btn rent-button-flex js-open-modal" data-modal="1" type="submit" >Send
+            <button class="rent-btn rent-button-flex js-open-modal" data-modal="1" type="submit">
+                Send
                 <svg width="18" height="8.66" class="rent-button-icon">
                     <use href="./img/icons.svg#arrow-right"></use>
                 </svg>
             </button>
-            </div>
         </form>
     </div>
 </section>

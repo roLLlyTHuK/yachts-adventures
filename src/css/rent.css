@@ -1,25 +1,50 @@
-@media only screen and (min-width: 768px) {
+.rent-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/* Стилі для десктопних пристроїв з шириною екрану від 1280px і більше */
+@media (min-width: 1280px) {
+  .rent-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 188px;
+
+  }
+
+  .img-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 64px;
+  }
+
+}
+
+@media  (min-width: 767px) {
   .section {
     padding-top: 100px;
     padding-bottom: 100px;
   }
 }
 
-@media only screen and (min-width: 1280px) {
+/* @media (min-width: 1280px) {
   .section {
     padding-top: 164px;
     padding-bottom: 164px;
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media (min-width: 1280px) {
   .rent-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 64px;
   }
-}
+} */
 .img-box{
   display: flex;
     flex-direction: column;
@@ -27,19 +52,14 @@
     gap: 64px;
     
 }
-@media only screen and (min-width: 375px) {
-  .img-box {
-    width: 335px;
-  }
-}
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 767px) {
   .rent-txt {
     width: 271px;
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media (min-width: 1280px) {
   .rent-txt {
     margin: 0;
   }
@@ -58,11 +78,10 @@ color: #F6F5EF;
 .rent-image-container{
   width: 282px;
     height: 191px;
-    fill: url(<path-to-image>), lightgray 50% / cover no-repeat;
 }
 
 
-@media only screen and (min-width: minwidthpx) {
+@media (min-width: 375px) {
   .rent-image-container {
     width: 259px;
       height: 187px;
@@ -70,7 +89,7 @@ color: #F6F5EF;
 }
 
 /* Rent Form */
- ::placeholder {
+ /* ::placeholder {
    color: white;
  }
 .rent-form{
@@ -95,13 +114,77 @@ display: flex;
   position: relative;
 
     
+} */
+.rent-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
 }
-@media (max-width: 768px) {
+
+.rent-form-row {
+  display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: transparent;
+  position: relative;
+  
+}
+@media (max-width: 767px) {
+  .rent-form-row {
+    max-width: 100%;
+  }
+}
+
+.rent-form-row input {
+  width: 100%;
+  width: 443px;
+  padding: 10px 0;
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+
+  
+}
+@media (min-width: 767px) {
+  .rent-form-row input {
+  width: 364px;
+    height: 1px;
+      
+  }
+}
+
+
+
+.rent-form-row label {
+  position: absolute;
+  top: -10px;
+  left: 4px;
+  padding: 10px 0;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.rent-form-row input:focus~label,
+.rent-form-row input:valid~label {
+  top: -20px;
+  left: 0;
+  color: #88b3b9;
+  font-size: 12px;
+}
+
+
+@media (max-width: 767px) {
   .rent-form-row {
     align-items: center;
   }
 }
-.rent-form-row input,
+/* .rent-form-row input,
 .rent-form-row textarea {
   width: 100%;
   width: 443px;
@@ -113,16 +196,14 @@ display: flex;
   border-bottom: 1px solid #ccc;
   border-radius: 0;
   
-}
-@media (max-width: 768px) {
+} */
+@media (max-width: 767px) {
 
-  .rent-form-row input,
-  .rent-form-row textarea {
+  .rent-form-row input {
     width: 335px;
       height: 1px;
       color: #fff;
-  }
-    
+  }  
 }
 
 
@@ -153,19 +234,4 @@ display: flex;
 
 
 
-/* Стилі для десктопних пристроїв з шириною екрану від 1280px і більше */
-@media (min-width: 1280px) {
-  .rent-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
 
-  .rent-image-container {
-    flex: 1;
-  }
-
-  .rent-txt {
-    font-size: 2rem;
-  }
-}

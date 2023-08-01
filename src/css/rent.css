@@ -1,29 +1,4 @@
-.rent-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-/* Стилі для десктопних пристроїв з шириною екрану від 1280px і більше */
-@media (min-width: 1280px) {
-  .rent-container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    gap: 188px;
-
-  }
-
-  .img-box {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 64px;
-  }
-
-}
-
-@media  (min-width: 767px) {
+@media only screen and (min-width: 768px) {
   .section {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -53,7 +28,7 @@
     
 }
 
-@media (min-width: 767px) {
+@media only screen and (min-width: 768px) {
   .rent-txt {
     width: 271px;
   }
@@ -177,9 +152,7 @@ display: flex;
   color: #88b3b9;
   font-size: 12px;
 }
-
-
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .rent-form-row {
     align-items: center;
   }
@@ -196,14 +169,16 @@ display: flex;
   border-bottom: 1px solid #ccc;
   border-radius: 0;
   
-} */
-@media (max-width: 767px) {
+}
+@media (max-width: 768px) {
 
-  .rent-form-row input {
+  .rent-form-row input,
+  .rent-form-row textarea {
     width: 335px;
       height: 1px;
       color: #fff;
-  }  
+  }
+    
 }
 
 

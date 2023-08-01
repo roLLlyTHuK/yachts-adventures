@@ -43,6 +43,8 @@
   .modal {
     width: 335px;
       height: 396px;
+      border-radius: 20px;
+        background: #1F212D;
   }
 
 }
@@ -90,7 +92,7 @@
     line-height: 140%;
     letter-spacing: -0.32px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
   .rent-modal-txt {
     width: 287px;

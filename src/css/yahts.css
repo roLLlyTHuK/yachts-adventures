@@ -6,6 +6,7 @@
   display: block;
 }
 .yacht-title-box {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -53,104 +54,37 @@
 .vectors {
   display: none;
   position: absolute;
-  top: 130px;
-  left: -65px;
-  width: 1280px;
-  height: 1611px;
-  opacity: 0.2;
+  top: 90px;
+  left: 0px;
+  width: 100%;
+  opacity: 0.1;
   z-index: -1;
 }
-.title-light::before,
-.title-light::after {
+.yacht-title-box::before,
+.yacht-title-box::after {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
   border-radius: 50%;
   background: #91afba;
   filter: blur(100px);
-  z-index: 5;
+  z-index: 3;
 }
-.title-light::before {
-  transform: translate(10%, -12%);
+.yacht-title-box::before {
+  top: -43px;
+  left: -80px;
+
   width: 225px;
   height: 225px;
-  opacity: 0.6;
+  opacity: 6;
 }
-.title-light::after {
-  transform: translate(60%, -10%);
+.yacht-title-box::after {
+  top: -29px;
+  left: 138px;
   width: 195px;
   height: 195px;
-  opacity: 0.3;
+  opacity: 3;
 }
-/*============================|Liquid-btn|===========================*/
-/* .liquid-btn {
-  position: relative;
-  display: block;
-  width: 130px;
-  border: 1px solid var(--white);
-  border-radius: 60px;
-  background-color: transparent;
-  text-align: center;
-  padding: 12px 24px;
-  cursor: pointer;
-  overflow: hidden;
-}
-.liquid-btn .liquid-s {
-  position: relative;
-  color: var(--white);
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.1;
-  letter-spacing: -0.63px;
-  z-index: 1;
-}
-.liquid-btn .liquid {
-  position: absolute;
-  top: -80px;
-  left: 0;
-  width: 200px;
-  height: 200px;
-  background: #93abae;
-  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
-  transition: 0.5s;
-}
-.liquid-btn .liquid::after,
-.liquid-btn .liquid::before {
-  content: '';
-  width: 200%;
-  height: 200%;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -75%);
-  background: #000;
-}
-.liquid-btn .liquid::before {
-  border-radius: 45%;
-  background: rgba(20, 20, 20, 1);
-  animation: animate 5s linear infinite;
-}
-.liquid-btn .liquid::after {
-  border-radius: 40%;
-  background: rgba(20, 20, 20, 0.5);
-  animation: animate 10s linear infinite;
-}
-.liquid-btn:hover {
-  border-color: #88b3b9;
-}
-.liquid-btn:hover .liquid {
-  top: -120px;
-  background-color: #88b3b9;
-}
-@keyframes animate {
-  0% {
-    transform: translate(-50%, -75%) rotate(0deg);
-  }
-  100% {
-    transform: translate(-50%, -75%) rotate(360deg);
-  }
-} */
+
 /*============================|gallery|===========================*/
 .yacht-gallery {
   position: relative;
@@ -190,11 +124,12 @@
 .btn-next:hover {
   color: var(--light-green);
   border: 1px solid var(--light-green);
-  & svg {
-    fill: var(--light-green);
-  }
 }
 
+.btn-prev:hover svg,
+.btn-next:hover svg {
+  fill: var(--light-green);
+}
 .yacht-card {
   display: flex;
   flex-direction: column;
@@ -276,14 +211,16 @@
     line-height: 1.1;
     margin-bottom: 64px;
   }
-  .title-light::before {
-    transform: translate(-5%, -12%);
+  .yacht-title-box::before {
+    top: -92px;
+    left: -30px;
     width: 399px;
     height: 399px;
     opacity: 0.6;
   }
-  .title-light::after {
-    transform: translate(110%, -10%);
+  .yacht-title-box::after {
+    top: -69px;
+    left: 382px;
     width: 304px;
     height: 304px;
     opacity: 0.3;
@@ -319,14 +256,16 @@
   .vectors {
     display: block;
   }
-  .title-light::before {
-    transform: translate(10%, -12%);
+  .yacht-title-box::before {
+    top: -70px;
+    left: 60px;
     width: 414px;
     height: 414px;
     opacity: 0.6;
   }
-  .title-light::after {
-    transform: translate(160%, -10%);
+  .yacht-title-box::after {
+    top: -39px;
+    left: 535px;
     width: 316px;
     height: 316px;
     opacity: 0.3;

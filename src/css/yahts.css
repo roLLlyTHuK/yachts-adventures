@@ -57,6 +57,7 @@
   left: 0px;
   width: 100%;
   opacity: 0.2;
+  z-index: -1;
 }
 .title-light::before,
 .title-light::after {
@@ -120,11 +121,12 @@
 .btn-next:hover {
   color: var(--light-green);
   border: 1px solid var(--light-green);
-  & svg {
-    fill: var(--light-green);
-  }
 }
 
+.btn-prev:hover svg,
+.btn-next:hover svg {
+  fill: var(--light-green);
+}
 .yacht-card {
   display: flex;
   flex-direction: column;

@@ -39,11 +39,14 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+  transition-property: transform, transition-duration;
 }
 
 .header-logo:hover,
 .header-logo:focus {
   color: var(--light-green);
+  transform: scale(1.07);
+  transition-duration: 500ms;
 }
 @media (min-width: 768px) {
   .header-logo {
@@ -61,6 +64,14 @@
     cursor: pointer;
   }
 }
+.header-li {
+  transition-property: transform, transition-duration;
+}
+.header-li:hover,
+.header-li:focus {
+  transform: scale(1.17);
+  transition-duration: 500ms;
+}
 .header-links {
   color: var(--white);
   font-family: DMSans-tp, sans-serif;
@@ -73,10 +84,12 @@
   background-color: transparent;
   cursor: pointer;
 }
+
 .header-links:hover,
 .header-links:focus {
   color: var(--light-green);
 }
+
 .header-link {
   display: none;
 }

@@ -1,7 +1,7 @@
 #scrollToTopButton {
   position: fixed;
   z-index: 999;
-  bottom: 20px;
+  bottom: 62px;
   right: 20px;
 
   visibility: hidden;
@@ -28,12 +28,13 @@
     width: 68px;
     height: 68px;
     bottom: 32px;
-    transform: translate(284px, 0);
+    right: calc((100vw - 704px) / 2);
   }
 }
 @media only screen and (min-width: 1280px) {
   #scrollToTopButton {
-    transform: translate(540px, 0);
+    bottom: 32px;
+    right: calc((100vw - 1216px) / 2);
   }
 }
 

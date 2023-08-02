@@ -166,6 +166,7 @@
   letter-spacing: -0.32px;
   margin-top: 16px;
   margin-bottom: 32px;
+
 }
 
 
@@ -418,7 +419,7 @@
   }
 
   .hero-sibscribe-container {
-    margin-left: 236px;
+    margin-left: 218px;
     margin-top: 132px;
     margin-bottom: auto;
     width: 554px;
@@ -436,7 +437,12 @@
   }
 
   .hero-title {
-    max-width: 490px;
+    font-family: DMSans-tp;
+    /* max-width: 490px; */
+    width: 100%;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: 1px;
   }
 
   .box-client1 {
@@ -540,13 +546,13 @@
 
   .hero-title {
 
-    max-width: 304px;
+    /* max-width: 304px; */
     width: 100%;
     /* height: 120px; */
     font-size: 36px;
     font-weight: 500;
     line-height: 110%;
-    letter-spacing: -1.62px;
+    letter-spacing: 1.62px;
 
   }
 

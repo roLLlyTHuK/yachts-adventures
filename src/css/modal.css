@@ -15,7 +15,7 @@
   transform: translate(-50%, -50%);
   z-index: 30;
 
-  
+
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
   text-align: center;
   padding: 30px;
@@ -28,12 +28,13 @@
 
   .modal {
     width: 335px;
-      height: 396px;
-      border-radius: 20px;
-        background: #1F212D;
+    height: 396px;
+    border-radius: 20px;
+    background: #1F212D;
   }
 
 }
+
 .overlay {
   opacity: 0;
   visibility: hidden;
@@ -57,58 +58,61 @@
 .close-rent-button {
   background-color: transparent;
   width: 24px;
-    height: 24px;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-    border: none;
-      outline: none;
+  height: 24px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 
-.rent-modal-txt{
-  
+.rent-modal-txt {
+
   color: #F6F5EF;
   width: 442px;
-    font-family: DM Sans;
-    text-align: center;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%;
-    letter-spacing: -0.32px;
+  font-family: DM Sans;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.32px;
 }
+
 @media (max-width: 767px) {
 
   .rent-modal-txt {
     width: 287px;
     text-align: left;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 140%;
-    
-      letter-spacing: -0.28px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+
+    letter-spacing: -0.28px;
   }
 
 }
-.modal-h{
+
+.modal-h {
   width: 282px;
   text-align: left;
-  color:#F6F5EF;
-    font-family: DM Sans;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 120%;
-    padding-bottom: 16px;
-  
-    letter-spacing: -1.44px;
+  color: #F6F5EF;
+  font-family: DM Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  padding-bottom: 16px;
+
+  letter-spacing: -1.44px;
 }
+
 @media (max-width: 767px) {
 
   .modal-h {
-  width: 282px;
+    width: 282px;
   }
 
 }
@@ -124,36 +128,36 @@
 }
 
 
-.thumb-rent{
+.thumb-rent {
   width: 338px;
-    height: 198px;
-    flex-shrink: 0;
-    display: flex;
+  height: 198px;
+  flex-shrink: 0;
+  display: flex;
 }
 
 @media (max-width: 767px) {
 
   .thumb-rent {
-  display: inline-flex;
+    display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 14px;
   }
 
 }
-.rent-modal-image{
+
+.rent-modal-image {
   width: 338px;
-    height: 198px;
-    flex-shrink: 0;
+  height: 198px;
+  flex-shrink: 0;
 }
 
 @media (max-width: 767px) {
 
   .rent-modal-image {
-  width: 287px;
+    width: 287px;
     height: 149px;
     flex-shrink: 0;
   }
 
 }
-

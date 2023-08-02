@@ -59,7 +59,6 @@
   font-style: normal;
   font-weight: 500;
   line-height: 110%;
-  /* 66px */
   letter-spacing: -2.7px;
   margin-bottom: 64px;
 }
@@ -125,32 +124,6 @@
   font-size: 12px;
 }
 
-/* ::placeholder {
-   color: white;
- }
-.rent-form{
-  display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 20px;
-}
-.form-box{
-  display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 28px;
-}
-.rent-form-row{
-  
-display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  background-color: transparent;
-  position: relative;
-
-    
-} */
 @media (max-width: 767px) {
   .rent-form-row {
     align-items: center;

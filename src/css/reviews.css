@@ -31,6 +31,7 @@
 }
 
 .adventures-title {
+  font-family: DM Sans-tp;
   font-size: 24px;
   font-style: italic;
   font-weight: 500;
@@ -38,6 +39,7 @@
   letter-spacing: -0.04em;
   margin: 0;
   margin-bottom: 24px;
+  max-width: 497px;
 }
 
 .button-box {
@@ -59,12 +61,14 @@
 .button-reviews:focus {
   background-color: #88b3b9;
 }
-@media only screen and (min-width: 375px) {
+@media screen and (min-width: 320px) and (max-width: 374px) {
   .adventures-title {
-    width: 335px;
+    max-width: 335px;
+  }
+  .adventures-text {
+    max-width: 335px;
   }
 }
-
 @media only screen and (min-width: 768px) {
   .adventures-title {
     font-size: 32px;
@@ -109,7 +113,7 @@
   font-weight: 400;
   line-height: 140%;
   letter-spacing: -0.32px;
-  width: 273px;
+  max-width: 273px;
   margin-bottom: 40px;
 }
 
@@ -202,28 +206,8 @@
     justify-content: space-between;
     display: flex;
   }
-  .adventures-title {
-    width: 335px;
-    font-family: DM Sans;
-    font-size: 24px;
-    font-style: italic;
-    font-weight: 500;
-    line-height: 120%;
-    letter-spacing: -1.08px;
-    margin-bottom: 24px;
-  }
   .adventure-title-gray {
     font-style: italic;
-  }
-  .adventures-text {
-    width: 335px;
-    color: var(--white, #f6f5ef);
-    font-family: DM Sans;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%;
-    letter-spacing: -0.28px;
   }
 }
 

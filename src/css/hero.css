@@ -1,5 +1,5 @@
 .hero {
-  padding-bottom: 164px;
+  padding-bottom: 252px;
 }
 
 /**
@@ -225,18 +225,18 @@
   top: 0;
   left: 50%;
   transform: translate(-50%, -75%);
-  background: #000;
+  background: var(--dark-blue);
 }
 
 .liquid-btn .liquid::before {
   border-radius: 45%;
-  background: rgba(20, 20, 20, 1);
+  background: rgb(69, 136, 136);
   animation: animate 5s linear infinite;
 }
 
 .liquid-btn .liquid::after {
   border-radius: 40%;
-  background: rgba(20, 20, 20, 0.5);
+  background: #565a77;
   animation: animate 10s linear infinite;
 }
 
@@ -288,7 +288,7 @@
 
   .hero {
     padding-top: 64px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
   }
 
   .hero-photos {
@@ -412,7 +412,7 @@
 
   .hero {
 
-    margin-bottom: 82px;
+    /* margin-bottom: 82px; */
 
   }
 
@@ -517,7 +517,7 @@
 
   .hero {
     padding-top: 40px;
-    padding-bottom: 124px;
+    padding-bottom: 40px;
   }
 
   .box {
@@ -575,23 +575,6 @@
     color: #F6F5EF;
 
   }
-
-  /* .hero-btn-get {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    border-radius: 60px;
-    min-width: 130px;
-    height: 43px;
-    font-size: 14px;
-    background: var(--light-green, #93ABAE);
-    font-weight: 700;
-    line-height: 110%;
-    letter-spacing: -0.63px;
-    color: var(--white, #F6F5EF);
-  } */
-
 
   /* New Button Swimming */
 
@@ -791,7 +774,7 @@
 
   .hero {
     padding-top: 40px;
-    padding-bottom: 124px;
+    padding-bottom: 27px;
   }
 
   .box {
@@ -913,7 +896,7 @@
     /* position: relative; */
     width: 80vw;
     height: 427px;
-    padding-bottom: 480px;
+    /* padding-bottom: 480px; */
 
   }
 
@@ -947,8 +930,8 @@
   }
 
   .our-clients {
-    top: 45vw;
 
+    top: 45vw;
 
   }
 

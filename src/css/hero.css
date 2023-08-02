@@ -230,13 +230,13 @@
 
 .liquid-btn .liquid::before {
   border-radius: 45%;
-  background: rgb(69, 136, 136);
+  background: rgb(19, 22, 35);
   animation: animate 5s linear infinite;
 }
 
 .liquid-btn .liquid::after {
   border-radius: 40%;
-  background: #565a77;
+  background: rgba(19, 22, 35, 0.5);
   animation: animate 10s linear infinite;
 }
 

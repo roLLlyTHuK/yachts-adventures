@@ -593,7 +593,7 @@
   } */
 
 
-  /* New Bottom Swimming */
+  /* New Button Swimming */
 
 
   .hero-buttons-container .liquid-btn {
@@ -688,11 +688,8 @@
   }
 
   .our-clients {
-    /* min-width: 46px; */
-    position: absolute;
-    top: 143px;
-    left: 46px;
-    z-index: 2;
+
+    color: #11131F;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.56px;
@@ -865,7 +862,7 @@
   } */
 
 
-  /* New Bottom Swimming */
+  /* New Button Swimming */
 
 
   .hero-buttons-container .liquid-btn {
@@ -912,7 +909,6 @@
     /* position: relative; */
     width: 80vw;
     height: 427px;
-
     padding-bottom: 480px;
 
   }

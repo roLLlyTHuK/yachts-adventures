@@ -49,7 +49,7 @@
 .button-reviews {
   width: 13px;
   height: 13px;
-  background-color: #1f212d;
+  background-color: var(--blue);
   margin: 0;
   padding: 0;
   border-radius: 50%;
@@ -80,13 +80,8 @@
 }
 
 .adventure-title-gray {
-  font-family: DM Sans;
-  font-size: 24px;
-  font-style: italic;
-  font-weight: 500;
-  line-height: 120%;
-  letter-spacing: -1.08px;
-  color: linear green;
+  font-family: DMSans-Italic-tp;
+  color: #88b3b9;
 }
 
 .adventures-title-item {
@@ -107,16 +102,14 @@
 }
 
 .adventures-text {
-  color: #f6f5ef;
-
+  color: var(--white, #f6f5ef);
   font-family: DM Sans;
-  font-size: 14px;
+  font-size: 16px;
+  font-style: normal;
   font-weight: 400;
-  line-height: 1.4;
-  letter-spacing: -0.02em;
-
-  margin: 0;
-
+  line-height: 140%;
+  letter-spacing: -0.32px;
+  width: 273px;
   margin-bottom: 40px;
 }
 
@@ -163,79 +156,6 @@
   }
 }
 
-.adventures-list-item {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-  border-radius: 24px;
-  background: #1f212d;
-  width: 384px;
-  height: 282px;
-  padding: 32px;
-}
-
-@media only screen and (min-width: 375px) {
-  .adventures-list-item {
-    width: 335px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .adventures-list-item {
-    width: 344px;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .adventures-list-item {
-    width: 384px;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1279.98) {
-  .adventures-list-item {
-    padding: 24px 12px;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .adventures-list-item {
-    padding: 32px 32px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .adventures-list-item:nth-last-child(-n + 2) {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1279.98px) {
-  .adventures-list-item:nth-last-child(-n + 1) {
-    display: none;
-  }
-}
-
-.adventures-list-item-title {
-  color: #f6f5ef;
-  text-align: center;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.1;
-  letter-spacing: -0.04em;
-  margin-top: 18px;
-  margin-bottom: 8px;
-  width: 497px;
-}
-
-@media only screen and (min-width: 768px) {
-  .adventures-list-item-title {
-    font-size: 18px;
-    margin-top: 24px;
-  }
-}
-
 .adventures-list-item-text {
   color: rgba(246, 245, 239, 0.5);
   text-align: center;
@@ -279,6 +199,8 @@
   .button-box {
     margin-top: 14px;
     padding-bottom: 100px;
+    justify-content: space-between;
+    display: flex;
   }
   .adventures-title {
     width: 335px;
@@ -302,5 +224,64 @@
     font-weight: 400;
     line-height: 140%;
     letter-spacing: -0.28px;
+  }
+}
+
+.reviews-block {
+  border-radius: 24px;
+  background: var(--blue);
+  width: 384px;
+  height: 282px;
+  padding: 32px;
+}
+
+.reviews-name {
+  color: #f6f5ef;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  font-size: 18px;
+  margin-bottom: 8px;
+  margin-top: 24px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .reviews-block {
+    display: flex;
+    width: 344px;
+    padding: 24px 32px;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .reviews-block {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 335px;
+    height: auto;
+    border-radius: 24px;
+    background: rgb(31, 33, 45);
+    padding: 24px;
+  }
+
+  .reviews-name {
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+    font-size: 16px;
+    margin-bottom: 8px;
+    margin-top: 18px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .reviews-block {
+    width: 100%;
   }
 }

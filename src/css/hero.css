@@ -1,20 +1,6 @@
 .hero {
-  /* background-color: turquoise; */
-  /* background-color: #11131f;
-  z-index: -10; */
-
   padding-bottom: 164px;
 }
-
-
-/* @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-          .hero {
-            background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg/bg_pc@2x.jpg);
-            background-size: cover;
-          } */
-
 
 /**
   |============================
@@ -134,19 +120,13 @@
   font-size: 18px;
   letter-spacing: -0.81px;
   line-height: 110%;
-
 }
 
-
 /**
-            |============================
-            |  Hero subscribe
-            |============================
-          */
-
-/* .hero-photos {
-            position: relative;
-          } */
+|============================
+|  Hero subscribe
+|============================
+*/
 
 .hero-title {
 
@@ -158,6 +138,7 @@
 }
 
 .hero-title-grey {
+
   font-family: DMSans-Italic-tp;
   background: linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%);
   background-clip: text;
@@ -183,6 +164,7 @@
 
 
 .hero-buttons-container {
+
   display: flex;
   gap: 11px;
   align-items: center;
@@ -276,7 +258,6 @@
     transform: translate(-50%, -75%) rotate(360deg);
   }
 }
-
 
 /* Second Button  */
 
@@ -664,12 +645,13 @@
 
   .box-background {
 
+    position: absolute;
     width: 335px;
     height: 427px;
     top: 64px;
     left: 22px;
     z-index: -8;
-    position: absolute;
+
   }
 
 
@@ -707,27 +689,27 @@
 
   .our-clients {
     /* min-width: 46px; */
-    color: #11131F;
+    position: absolute;
+    top: 143px;
+    left: 46px;
+    z-index: 2;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.56px;
     text-transform: uppercase;
-    position: absolute;
+    color: #11131F;
 
-    top: 143px;
-    left: 46px;
-    z-index: 2;
   }
 
   /* Boss & Yacht photos block  */
 
   .box-yacht {
+    position: absolute;
     top: 229px;
     left: 46px;
     max-width: 287px;
     height: 167px;
     z-index: -5;
-    position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -814,7 +796,6 @@
   .box {
     display: flex;
     flex-direction: column-reverse;
-    /* gap: 40px; */
 
   }
 

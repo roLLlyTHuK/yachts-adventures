@@ -180,29 +180,12 @@
 
 }
 
-/* .hero-btn-get {
-
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  padding: auto;
-  border-radius: 60px;
-  max-width: 150px;
-  font-size: 18px;
-  height: 48px;
-  letter-spacing: -0.81px;
-  font-weight: 700;
-  line-height: 110%;
-  background: var(--light-green, #93ABAE);
-  color: var(--white, #F6F5EF);
-} */
-
 /**
   |============================
   | New Button
   |============================
 */
+
 
 .liquid-btn {
   position: relative;
@@ -210,6 +193,7 @@
   max-width: 150px;
   letter-spacing: -0.81px;
   border-radius: 60px;
+  border: 1px solid #93ABAE;
   font-weight: 700;
   line-height: 110%;
   background-color: transparent;
@@ -300,6 +284,7 @@
 .hero-btn-get:hover,
 .hero-btn-get:focus {
   background-color: #88B3B9;
+  border: 1px solid #88B3B9;
 }
 
 .hero-btn-explore:hover,
@@ -810,6 +795,12 @@
 }
 
 @media screen and (max-width: 374px) {
+
+  .hero {
+    padding-top: 40px;
+    padding-bottom: 124px;
+  }
+
   .box {
     display: flex;
     flex-direction: column-reverse;

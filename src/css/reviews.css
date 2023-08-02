@@ -107,7 +107,7 @@
 
 .adventures-text {
   color: var(--white, #f6f5ef);
-  font-family: DM Sans;
+  font-family: DMSans-tp;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -267,5 +267,22 @@
 @media screen and (min-width: 320px) and (max-width: 375px) {
   .reviews-block {
     width: 100%;
+  }
+  @media only screen and (min-width: 375px) {
+    .adventures {
+      padding-top: 40px;
+      padding-bottom: 80px;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    .adventures {
+      padding-top: 50px;
+      padding-bottom: 100px;
+  }
+  @media only screen and (min-width: 1280px) {
+    .adventures {
+      padding-top: 82px;
+      padding-bottom: 164px;
+    }
   }
 }

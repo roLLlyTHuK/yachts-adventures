@@ -104,6 +104,7 @@
 .menu-toggle-icon {
   fill: var(--white);
 }
+
 /* animation */
 .header-links {
   padding: 12px 10px;
@@ -142,4 +143,7 @@
   right: 100%;
   transition: 1.5s;
   transition-delay: 0, 25s;
+}
+.header-rev {
+  padding-right: 0;
 }

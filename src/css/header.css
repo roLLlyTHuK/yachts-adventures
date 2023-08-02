@@ -109,7 +109,7 @@
 .header-links {
   padding: 12px 10px;
   position: relative;
-  transition: 0, 2s;
+  transition: 0.2s;
   overflow: hidden;
   display: inline-block;
   text-decoration: none;
@@ -129,7 +129,7 @@
 .header-links:hover .button-line--top {
   left: 100%;
   transition: 1.5s;
-  transition-delay: 0, 25s;
+  transition-delay: 0.25s;
 }
 .button-line--bottom {
   bottom: 0;
@@ -142,7 +142,7 @@
 .header-links:hover .button-line--bottom {
   right: 100%;
   transition: 1.5s;
-  transition-delay: 0, 25s;
+  transition-delay: 0.25s;
 }
 .header-rev {
   padding-right: 0;

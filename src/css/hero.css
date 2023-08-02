@@ -2,6 +2,8 @@
   /* background-color: turquoise; */
   /* background-color: #11131f;
   z-index: -10; */
+
+  padding-bottom: 164px;
 }
 
 
@@ -317,6 +319,11 @@
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
 
+  .hero {
+    padding-top: 64px;
+    padding-bottom: 100px;
+  }
+
   .hero-photos {
 
     padding-bottom: 660px;
@@ -540,6 +547,11 @@
 
 
 @media screen and (min-width: 375px) and (max-width: 767px) {
+
+  .hero {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
 
   .box {
     display: flex;

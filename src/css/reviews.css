@@ -90,28 +90,31 @@
 
 .adventure-title-gray {
   font-family: DMSans-Italic-tp;
-  color: #88b3b9;
+  background: var(--linear-green);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.adventures-title-item {
-  color: #f6f5ef;
+.adventures-title {
+  color: var(--white);
   font-style: normal;
 }
 
 @media only screen and (min-width: 375px) {
-  .adventures-title-item {
+  .adventures-title {
     width: 335px;
   }
 }
 
-@media only screen and (min-width: minwidthpx) {
-  .adventures-title-item {
+@media only screen and (min-width: 768px) {
+  .adventures-title {
     width: 497px;
   }
 }
 
 .adventures-text {
-  color: var(--white, #f6f5ef);
+  color: var(--white);
   font-family: DMSans-tp;
   font-size: 16px;
   font-style: normal;

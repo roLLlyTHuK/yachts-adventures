@@ -76,14 +76,14 @@
 
   width: 225px;
   height: 225px;
-  opacity: 6;
+  opacity: 0.6;
 }
 .yacht-title-box::after {
   top: -29px;
   left: 114px;
   width: 161px;
   height: 161px;
-  opacity: 3;
+  opacity: 0.3;
 }
 @media only screen and (max-width: 374.98px) {
   yacht-title-box::after {

@@ -1,26 +1,5 @@
 /* Rent Modal */
 
-.modal {
-
-  opacity: 0;
-  visibility: hidden;
-
-  width: 570px;
-  height: 522px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 30;
-
-
-  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  padding: 30px;
-  border-radius: 40px;
-  background: #1F212D;
-  transition: 0.3s all;
-}
 
 .overlay {
   opacity: 0;
@@ -43,7 +22,28 @@
 }
 
 @media only screen and (min-width: 320px){
+  .modal {
   
+      opacity: 0;
+      visibility: hidden;
+  
+      width: 335px;
+        height: 396px;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 30;
+  
+  
+      box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      padding: 30px;
+      border-radius: 40px;
+      background: #1F212D;
+      transition: 0.3s all;
+    }
+
 .overlay {
   position: fixed;
   top: 0;

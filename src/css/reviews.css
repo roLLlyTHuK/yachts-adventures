@@ -286,6 +286,9 @@
     padding-top: 82px;
     padding-bottom: 164px;
   }
+  .swiper-pagination {
+    display: none;
+  }
 }
 .gallery-reviews {
   position: relative;

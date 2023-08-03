@@ -66,7 +66,7 @@
 .button-reviews:focus {
   background-color: #88b3b9;
 }
-@media screen and (min-width: 320px) and (max-width: 374px) {
+@media screen and (min-width: 320px) and (max-width: 374.98px) {
   .adventures-title {
     max-width: 335px;
   }
@@ -204,7 +204,7 @@
     display: none;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767.98px) {
   .button-box {
     margin-top: 14px;
     padding-bottom: 100px;
@@ -247,7 +247,7 @@
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767.98px) {
   .reviews-block {
     display: flex;
     align-items: center;
@@ -300,33 +300,3 @@
   top: unset;
   bottom: 35px;
 }
-
-/* .reviews-spot {
-  position: absolute;
-  top: -276px;
-  left: 212px;
-  width: 283px;
-  height: 283px;
-  transform: rotate(-45deg);
-  border-radius: 50%;
-  opacity: 0.6;
-  background: #91afba;
-  z-index: -3;
-  filter: blur(100px);
-}
-@media only screen and (min-width: 768px) {
-  .reviews-spot {
-    top: -376px;
-    left: 623px;
-    width: 413px;
-    height: 413px;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .reviews-spot {
-    top: -463px;
-    left: 919px;
-    width: 414px;
-    height: 414px;
-  }
-} */

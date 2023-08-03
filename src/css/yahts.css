@@ -1,6 +1,7 @@
 /*============================|top side|===========================*/
 #yahts {
   padding-bottom: 100px;
+  overflow-x: clip;
 }
 .yachts-box {
   display: block;
@@ -84,7 +85,7 @@
   height: 161px;
   opacity: 3;
 }
-@media only screen and (max-width: 374px) {
+@media only screen and (max-width: 374.98px) {
   yacht-title-box::after {
   }
 }

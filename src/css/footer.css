@@ -131,13 +131,6 @@
   color: var(--light-green);
 }
 
-/* @media only screen and (max-width: 767.98px) {
-  .footer-text-nav:hover,
-  .footer-text-nav:focus {
-    transform: scale(1.07);
-    transition-duration: 500ms;
-  }
-} */
 @media only screen and (min-width: 768px) {
   .footer-text-nav:hover,
   .footer-text-nav:focus {

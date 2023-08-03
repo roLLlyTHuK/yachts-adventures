@@ -218,7 +218,6 @@
   background: rgb(19, 22, 35);
   animation: animate 5s linear infinite;
 }
-
 .liquid-btn .liquid::after {
   border-radius: 40%;
   background: rgba(19, 22, 35, 0.5);
@@ -226,10 +225,10 @@
 }
 @media only screen and (max-width: 767.98px) {
   .liquid-btn .liquid::before {
-    background: rgb(32, 37, 48);
+    background: rgb(26, 31, 42);
   }
   .liquid-btn .liquid::after {
-    background: rgba(32, 37, 48, 0.5);
+    background: rgba(26, 31, 42, 0.5);
   }
 }
 

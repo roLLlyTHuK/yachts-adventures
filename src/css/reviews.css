@@ -287,3 +287,23 @@
     padding-bottom: 164px;
   }
 }
+.gallery-reviews {
+  position: relative;
+  padding-bottom: 67px;
+}
+.gallery-reviews .swiper-scrollbar {
+  display: none;
+}
+.gallery-reviews .swiper-pagination-bullet {
+  width: 13px;
+  height: 13px;
+  background-color: #1f212d;
+  opacity: 1;
+}
+.gallery-reviews .swiper-pagination-bullet-active {
+  background-color: #88b3b9;
+}
+.gallery-reviews .swiper-pagination {
+  top: unset;
+  bottom: 35px;
+}

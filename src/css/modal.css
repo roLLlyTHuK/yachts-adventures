@@ -1,6 +1,5 @@
 /* Rent Modal */
 
-
 .overlay {
   opacity: 0;
   visibility: hidden;
@@ -21,260 +20,255 @@
   visibility: visible;
 }
 
-@media only screen and (min-width: 320px){
+@media only screen and (min-width: 320px) {
   .modal {
-  
-      opacity: 0;
-      visibility: hidden;
-  
-      width: 335px;
-        height: 396px;
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 30;
-  
-  
-      box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
-      text-align: center;
-      padding: 30px;
-      border-radius: 40px;
-      background: #1F212D;
-      transition: 0.3s all;
-    }
+    opacity: 0;
+    visibility: hidden;
 
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(46, 47, 66, 0.4);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    width: 335px;
+    height: 396px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
 
-.modal-window {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  width: 335px;
-  min-height: 396px;
-  background:#1f212d;
-  border-radius: 20px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 40px 24px;
-}
+    box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 30px;
+    border-radius: 40px;
+    background: #1f212d;
+    transition: 0.3s all;
+  }
 
-.modal-window::after {
-  content: '';
-  width: 142px;
-  height: 142px;
-  top: 75px;
-  left: 96px;
-  background: #939cac;
-  opacity: 0.6;
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(100px);
-  transform: rotate(45deg);
-  z-index: -1;
-}
-
-.close-rent-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  padding: 0;
-  top: 14px;
-  right: 14px;
-  background-color: transparent;
-  outline: 0;
-  border: none;
-}
-
-.modal-h {
-  width: 282px;
-  height: 29px;
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: -0.045em;
-  margin-bottom: 14px;
-}
-
-.rent-modal-txt{
-  width: 287px;
-  height: 100px;
-  font-size: 14px;
-  line-height: 1.4;
-  letter-spacing: -0.02em;
-}
-
-.modal-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 287px;
-  height: 149px;
-}
-}
-
-@media only screen and (min-width: 767px){
   .overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(46, 47, 66, 0.4);
-      transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-  
-    .modal-window {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) scale(1);
-      width: 570px;
-      min-height: 522px;
-      background: #1f212d;
-      border-radius: 40px;
-      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      padding: 97px 64px 64px 64px;
-    }
-  
-    .modal-window::after {
-      content: '';
-      width: 265px;
-      height: 265px;
-      top: 75px;
-      left: 96px;
-      background: #939cac;
-      opacity: 0.6;
-      position: absolute;
-      border-radius: 50%;
-      filter: blur(100px);
-      transform: rotate(45deg);
-      z-index: -1;
-    }
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-  
-    .close-rent-button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      width: 24px;
-      height: 24px;
-      padding: 0;
-      top: 32px;
-      right: 32px;
-      background-color: transparent;
-      outline: 0;
-      border: none;
-    }
-  
-    .modal-h {
-      width: 282px;
-      height: 38px;
-      font-size: 32px;
-      font-weight: 500;
-      line-height: 1.2;
-      letter-spacing: -0.045em;
-      margin-bottom: 16px;
-    }
-  
-    .rent-modal-txt {
-      width: 442px;
-      height: 88px;
-      line-height: 1.4;
-      letter-spacing: -0.02em;
-    }
-  
-    .modal-image {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 338px;
-      height: 198px;
-    }
+  .modal-window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 335px;
+    min-height: 396px;
+    background: #1f212d;
+    border-radius: 20px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 40px 24px;
+  }
+
+  .modal-window::after {
+    content: '';
+    width: 142px;
+    height: 142px;
+    top: 75px;
+    left: 96px;
+    background: #939cac;
+    opacity: 0.6;
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    transform: rotate(45deg);
+    z-index: -1;
+  }
+
+  .close-rent-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    top: 14px;
+    right: 14px;
+    background-color: transparent;
+    outline: 0;
+    border: none;
+  }
+
+  .modal-h {
+    width: 282px;
+    height: 29px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.045em;
+    margin-bottom: 14px;
+  }
+
+  .rent-modal-txt {
+    width: 287px;
+    height: 100px;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+  }
+
+  .modal-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 287px;
+    height: 149px;
+  }
 }
 
+@media only screen and (min-width: 768px) {
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-@media only screen and (min-width: 1280px){
- .modal-window {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%) scale(1);
-   width: 570px;
-   min-height: 522px;
-   background: #1f212d;
-   border-radius: 40px;
-   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   padding: 97px 64px 64px 64px;
- }
+  .modal-window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 570px;
+    min-height: 522px;
+    background: #1f212d;
+    border-radius: 40px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 97px 64px 64px 64px;
+  }
 
- .modal-window::after {
-   content: '';
-   width: 265px;
-   height: 265px;
-   top: 75px;
-   left: 96px;
-   background: #939cac;
-   opacity: 0.6;
-   position: absolute;
-   border-radius: 50%;
-   filter: blur(100px);
-   transform: rotate(45deg);
-   z-index: -1;
- }
+  .modal-window::after {
+    content: '';
+    width: 265px;
+    height: 265px;
+    top: 75px;
+    left: 96px;
+    background: #939cac;
+    opacity: 0.6;
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    transform: rotate(45deg);
+    z-index: -1;
+  }
 
+  .close-rent-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    top: 32px;
+    right: 32px;
+    background-color: transparent;
+    outline: 0;
+    border: none;
+  }
 
- .close-rent-button {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   position: absolute;
-   width: 24px;
-   height: 24px;
-   padding: 0;
-   top: 32px;
-   right: 32px;
-   background-color: transparent;
-   outline: 0;
-   border: none;
- }
+  .modal-h {
+    width: 282px;
+    height: 38px;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.045em;
+    margin-bottom: 16px;
+  }
 
- 
+  .rent-modal-txt {
+    width: 442px;
+    height: 88px;
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+  }
 
- .modal-h {
-   width: 282px;
-   height: 38px;
-   font-size: 32px;
-   font-weight: 500;
-   line-height: 1.2;
-   letter-spacing: -0.045em;
-   margin-bottom: 16px;
- }
+  .modal-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 338px;
+    height: 198px;
+  }
+}
 
- .rent-modal-txt {
-   width: 442px;
-   height: 88px;
-   line-height: 1.4;
-   letter-spacing: -0.02em;
- }
+@media only screen and (min-width: 1280px) {
+  .modal-window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 570px;
+    min-height: 522px;
+    background: #1f212d;
+    border-radius: 40px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 97px 64px 64px 64px;
+  }
 
- .modal-image {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   width: 338px;
-   height: 198px;
- }
+  .modal-window::after {
+    content: '';
+    width: 265px;
+    height: 265px;
+    top: 75px;
+    left: 96px;
+    background: #939cac;
+    opacity: 0.6;
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    transform: rotate(45deg);
+    z-index: -1;
+  }
+
+  .close-rent-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    top: 32px;
+    right: 32px;
+    background-color: transparent;
+    outline: 0;
+    border: none;
+  }
+
+  .modal-h {
+    width: 282px;
+    height: 38px;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.045em;
+    margin-bottom: 16px;
+  }
+
+  .rent-modal-txt {
+    width: 442px;
+    height: 88px;
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+  }
+
+  .modal-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 338px;
+    height: 198px;
+  }
 }

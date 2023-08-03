@@ -1,71 +1,93 @@
 <!-- Rent Section -->
-<section id="rent" class="rent-yacht-section section">
+<section class="rent-yacht-section section" id="rent">
   <div class="rent-container container">
     <div class="rent-box-all">
       <!-- Image  -->
       <div class="rent-box">
-        <div class="img-box">
-          <h2 class="rent-txt">Rent a yacht now</h2>
-          <img
-            class="rent-image-container"
-            srcset="./img/rent/img-1@1x.png, ./img/rent/img-1@2x.png"
-            src="./img/rent/rentyaht.png"
-            alt="Yaht"
-          />
+        <h2 class="rent-txt">Rent a yacht now</h2>
+        <div class="rent-pic">
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./img/rent/yacht-desk@1x.webp 1x,
+                ./img/rent/yacht-desk@2x.webp 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./img/rent/yacht-tab@1x.webp 1x,
+                ./img/rent/yacht-tab@2x.webp 2x
+              "
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./img/rent/yacht-mob@1x.webp 1x,
+                ./img/rent/yacht-mob@2x.webp 2x
+              "
+            />
+            <img src="./img/rent/yacht.webp" alt="A yacht in the sea" />
+          </picture>
         </div>
       </div>
       <!-- Rent Form -->
       <div class="rent-form-row-container">
-        <form id="contactForm" class="rent-form">
+        <form class="rent-form" id="contactForm">
+          <!-- 1 -->
           <div class="rent-form-row">
             <input
-              class="rent-yacht-input"
+              class="rent-input rent-field"
               type="text"
               id="username"
               name="username"
               required
             />
-            <label class="label-txt" for="username">Full name</label>
+            <label class="rent-lable" for="username">Full name</label>
           </div>
+          <!-- 2 -->
           <div class="rent-form-row">
             <input
-              class="rent-yacht-input"
+              class="rent-input rent-field"
               type="email"
               id="email"
               name="email"
               required
             />
-            <label class="label-txt" for="email">Email</label>
+            <label class="rent-lable" for="email">Email</label>
           </div>
+          <!-- 3 -->
           <div class="rent-form-row">
             <input
-              class="rent-yacht-input"
+              class="rent-input rent-field"
               type="tel"
               id="phone"
               name="phone"
               required
             />
-            <label class="label-txt" for="phone">Phone number</label>
+            <label class="rent-lable" for="phone">Phone number</label>
           </div>
-          <div class="rent-form-row">
+          <!-- 4 -->
+          <div class="rent-form-row textarea">
             <textarea
-              class="text-comments"
+              class="rent-textarea rent-field"
               type="text"
               id="comments"
               name="comments"
               rows="3"
               placeholder=""
-            >
-            </textarea>
-            <label class="label-txt2" for="comments">Comment</label>
+            ></textarea>
+            <label class="rent-lable" for="comments">Comment</label>
           </div>
+          <!-- Button -->
           <button
             class="rent-btn rent-button-flex js-open-modal"
             data-modal="1"
             type="submit"
           >
             Send
-            <svg width="18" height="8.66" class="rent-button-icon">
+            <svg class="rent-button-icon" width="18" height="9">
               <use href="./img/icons.svg#arrow-right"></use>
             </svg>
           </button>

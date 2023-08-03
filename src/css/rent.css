@@ -1,342 +1,161 @@
-/* Rent Form */
+.rent-yacht-section {
+  overflow-x: clip;
+}
 
-.rent-form-row-container {
+.rent-container {
+  position: relative;
+}
+
+.rent-box-all {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 24px;
+  gap: 40px;
 }
-.rent-form-row input {
-  width: 100%;
-  font-size: 16px;
-  margin-bottom: 30px;
-  color: #fff;
-  border: none;
-  border-bottom: 1px solid #fff;
-  outline: none;
-  background: transparent;
+@media only screen and (min-width: 768px) {
+  .rent-box-all {
+    flex-direction: row;
+    gap: 53px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .rent-box-all {
+    justify-content: center;
+    gap: 188px;
+  }
 }
 
-.rent-form-row textarea {
-  all: unset;
-  width: 100%;
-  font-size: 16px;
-  margin-bottom: 30px;
-  color: #fff;
-  border: none;
-  border-bottom: 1px solid #fff;
-  outline: none;
-  background: transparent;
-  padding: 0;
+.rent-box {
 }
-.rent-form-row label {
-  position: absolute;
-  top: 10px;
-  left: 4px;
-  color: #fff;
-  pointer-events: none;
-  transition: 0.5s;
+@media only screen and (min-width: 768px) {
+  .rent-box {
+    width: 278px;
+  }
 }
-.rent-form-row .label-txt2 {
-  all: unset;
-  position: absolute;
-  top: -16px;
-  left: 4px;
-  color: #fff;
-  pointer-events: none;
-  transition: 0.5s;
+
+.rent-txt {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: 0.008em;
+  margin-bottom: 16px;
+}
+@media only screen and (min-width: 768px) {
+  .rent-txt {
+    font-size: 60px;
+  }
+}
+
+.rent-pic {
+  max-width: 259px;
+}
+@media only screen and (min-width: 768px) {
+  .rent-pic {
+    max-width: 271px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .rent-pic {
+    max-width: 282px;
+  }
+}
+
+.rent-form-row-container {
+}
+@media only screen and (min-width: 768px) {
+  .rent-form-row-container {
+    min-width: 364px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .rent-form-row-container {
+    min-width: 443px;
+  }
+}
+
+.rent-form {
+}
+
+.rent-form-row {
+  margin-bottom: 24px;
+  position: relative;
 }
 .rent-form-row input:focus ~ label,
 .rent-form-row input:valid ~ label {
   top: -16px;
   left: 0;
-  color: #88b3b9;
+  color: var(--light-green);
   font-size: 12px;
+}
+@media only screen and (min-width: 768px) {
+  .rent-form-row {
+    margin-bottom: 28px;
+  }
+  .rent-form-row.textarea {
+    margin-bottom: 32px;
+  }
 }
 
 .rent-form-row textarea:focus ~ label {
-  top: -24px;
+  top: -16px;
   left: 0;
-  color: #88b3b9;
+  color: var(--light-green);
   font-size: 12px;
 }
 
-@media only screen and (min-width: 320px) {
-  .rent-box {
-    margin-bottom: 24px;
-  }
-  .rent-form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .rent-form-row {
-    position: relative;
-    width: 100%;
-  }
-  .rent-txt {
-    font-size: 36px;
-    font-weight: 500;
-    line-height: 1.1;
-    letter-spacing: -0.045em;
-    margin-bottom: 16px;
-  }
-
-  .rent-form-row,
-  .rent-form-row-textarea {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 24px;
-    max-width: 335px;
-  }
-
-  .rent-yacht-input {
-    color: inherit;
-    background-color: inherit;
-    border: 0;
-    outline: 0;
-    border-bottom: 1px solid #f6f5ef;
-    max-width: 335px;
-
-    height: 35px;
-    gap: 16px;
-  }
-
-  .rent-yacht-input::placeholder,
-  .rent-yacht-textarea::placeholder {
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: -0.045em;
-    color: #f6f5ef;
-  }
-
-  .text-comments {
-    color: inherit;
-    background-color: inherit;
-    border: 0;
-    outline: 0;
-    border-bottom: 1px solid #f6f5ef;
-    max-width: 335px;
-
-    gap: 58px;
-  }
-
-  .rent-btn {
-    background-color: transparent;
-    color: #fff;
-    display: flex;
-    margin-top: 64px;
-    padding: 14px 28px;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    gap: 16px;
-    border-radius: 60px;
-    border: 1px solid #f6f5ef;
-  }
-
-  .rent-btn:hover {
-    border: none;
-    color: #93abae;
-    border: 1px solid #93abae;
-  }
-
-  .rent-button-icon {
-    fill: #f6f5ef;
-  }
+.rent-field {
+  width: 100%;
+  font-size: 16px;
+  color: var(--white);
+  border: none;
+  border-bottom: 1px solid var(--white);
+  outline: none;
+  background: transparent;
 }
 
+.rent-input {
+  height: 33px;
+}
 @media only screen and (min-width: 768px) {
-  .rent-form {
-    width: 364px;
-  }
-  .rent-txt {
-    width: 287px;
-    height: 132px;
-    font-size: 60px;
-    font-weight: 500;
-    line-height: 1.1;
-    letter-spacing: -0.045em;
-    margin-bottom: 32px;
-    gap: 32px;
-  }
-
-  .rent-form-row,
-  .rent-form-row-textarea {
-    gap: 28px;
-    width: 364px;
-  }
-
-  .rent-box-all {
-    display: flex;
-  }
-
-  .img-box {
-    margin-right: 69px;
-  }
-
-  .rent-yacht-input {
-    color: inherit;
-    background-color: inherit;
-    border: 0;
-    outline: 0;
-    border-bottom: 1px solid #f6f5ef;
-    width: 364px;
+  .rent-input {
     height: 35px;
   }
+}
 
-  .text-comments {
-    width: 100%;
-    width: 364px;
-    color: inherit;
-    background-color: inherit;
-    /* height: 58px; */
-    resize: none;
-    border: 0;
-    outline: 0;
-    border-bottom: 1px solid #f6f5ef;
-  }
-
-  .rent-btn {
-    background-color: transparent;
-    color: #fff;
-    display: flex;
-    margin-top: 64px;
-    padding: 14px 28px;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    gap: 16px;
-    border-radius: 60px;
-    border: 1px solid #f6f5ef;
-  }
-
-  .rent-btn:hover {
-    border: none;
-    color: #93abae;
-    border: 1px solid #93abae;
-  }
-
-  .rent-yacht-input::placeholder,
-  .rent-yacht-textarea::placeholder {
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: -0.045em;
-    color: #f6f5ef;
-  }
-
-  .rent-button-icon {
-    fill: #f6f5ef;
-    margin-left: 16px;
+.rent-textarea {
+  resize: none;
+  height: 75px;
+}
+@media only screen and (min-width: 768px) {
+  .rent-textarea {
+    height: 77px;
   }
 }
 
-@media only screen and (min-width: 1280px) {
-  .rent-box-all {
-    padding-left: 183px;
-    padding-right: 183px;
-  }
-  .rent-box {
-    display: inline-flex;
-    justify-content: center;
-    align-items: flex-end;
-    gap: 188px;
-  }
-
-  .rent-yacht-section {
-    padding-top: 82px;
-    padding-bottom: 82px;
-    gap: 188px;
-  }
-
-  .rent-txt {
-    width: 282px;
-    height: 132px;
-    font-size: 60px;
-    font-weight: 500;
-    line-height: 1.1;
-    letter-spacing: -0.045em;
-    margin-bottom: 64px;
-  }
-
-  .rent-form-row,
-  .text-comments {
-    margin-top: 9px;
-    width: 443px;
-    gap: 28px;
-  }
-
-  .rent-yacht-section {
-    display: flex;
-  }
-
-  .img-box {
-    margin-right: 188px;
-  }
-
-  .rent-yacht-input {
-    color: inherit;
-    background-color: inherit;
-    border: 0;
-    outline: 0;
-    border-bottom: 1px solid #f6f5ef;
-    width: 443px;
-    height: 35px;
-  }
-
-  .rent-yacht-input::placeholder,
-  .rent-yacht-textarea::placeholder {
-    color: #f6f5ef;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: -0.045em;
-  }
-
-  .text-commets {
-    width: 100%;
-    color: inherit;
-    background-color: inherit;
-
-    height: 58px;
-    resize: none;
-    border: 0;
-    outline: 0;
-    border-bottom: 1px solid #f6f5ef;
-  }
-
-  .rent-btn {
-    background-color: transparent;
-    color: #fff;
-    display: flex;
-    margin-top: 64px;
-    padding: 14px 28px;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    gap: 16px;
-    border-radius: 60px;
-    border: 1px solid #f6f5ef;
-  }
-
-  .rent-btn:hover {
-    border: none;
-    color: #93abae;
-    border: 1px solid #93abae;
-  }
-
-  .rent-button-icon {
-    fill: #f6f5ef;
-    margin-left: 16px;
-  }
+.rent-yacht-input {
+}
+.rent-lable {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--white);
+  pointer-events: none;
+  transition: 0.5s;
 }
 
-.rent-yacht-section {
-  overflow: hidden;
+.rent-btn {
+  min-width: 123px;
+  height: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 60px;
+  border: 1px solid var(--white);
+  background: transparent;
 }
 
-.rent-container {
-  position: relative;
+.rent-button-icon {
+  fill: currentColor;
 }
 
 .rent-spot {
@@ -354,10 +173,11 @@
 }
 @media only screen and (min-width: 768px) {
   .rent-spot {
-    top: 75px;
+    top: 65px;
     left: 623px;
     width: 413px;
     height: 413px;
+
     border-radius: 413px;
   }
 }

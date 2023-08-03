@@ -1,15 +1,13 @@
 /* Rent Form */
 
- .rent-form-row-container{
+.rent-form-row-container {
   display: flex;
- flex-direction: column;
- align-items: flex-start;
- gap: 24px;
- }
-.rent-form-row input{
-
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+.rent-form-row input {
   width: 100%;
-  
   font-size: 16px;
   margin-bottom: 30px;
   color: #fff;
@@ -17,80 +15,81 @@
   border-bottom: 1px solid #fff;
   outline: none;
   background: transparent;
-  
 }
 
-
-.rent-form-row textarea{
+.rent-form-row textarea {
+  all: unset;
   width: 100%;
-  
-    font-size: 16px;
-    margin-bottom: 30px;
-    color: #fff;
-    border: none;
-    border-bottom: 1px solid #fff;
-    outline: none;
-    background: transparent;
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+  padding: 0;
 }
 .rent-form-row label {
-
   position: absolute;
-  top: -16px;
+  top: 10px;
   left: 4px;
-  
   color: #fff;
   pointer-events: none;
   transition: 0.5s;
 }
-
-.rent-form-row input:focus~label,
-.rent-form-row input:valid~label {
-  top: -20px;
+.rent-form-row .label-txt2 {
+  all: unset;
+  position: absolute;
+  top: -16px;
+  left: 4px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.rent-form-row input:focus ~ label,
+.rent-form-row input:valid ~ label {
+  top: -16px;
   left: 0;
   color: #88b3b9;
   font-size: 12px;
 }
-.rent-form-row textarea:valid~label
-.rent-form-row textarea:focus~label {
-  top: -20px;
+
+.rent-form-row textarea:focus ~ label {
+  top: -24px;
   left: 0;
   color: #88b3b9;
   font-size: 12px;
 }
 
-
- .rent-form-row-container::after {
-   content: '';
+.rent-form-row-container::after {
+  content: '';
   width: 283px;
-    height: 283px;
-   top: 400px;
-   left: 192px;
+  height: 283px;
+  top: 400px;
+  left: 192px;
 
-   background: #91AFBA;
-   opacity: 0.6000000238418579;
-   position: absolute;
-   border-radius: 283px;
-   filter: blur(100px);
+  background: #91afba;
+  opacity: 0.6000000238418579;
+  position: absolute;
+  border-radius: 283px;
+  filter: blur(100px);
   transform: rotate(-44.916deg);
-   z-index: -1;
- }
+  z-index: -1;
+}
 
 @media only screen and (min-width: 320px) {
-.rent-box{
-  margin-bottom: 24px;
-}
-.rent-form {
-
+  .rent-box {
+    margin-bottom: 24px;
+  }
+  .rent-form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-   
   }
-    .rent-form-row {
-  
-      position: relative;
-      width: 100%;
-    }
+  .rent-form-row {
+    position: relative;
+    width: 100%;
+  }
   .rent-txt {
     font-size: 36px;
     font-weight: 500;
@@ -127,53 +126,45 @@
     color: #f6f5ef;
   }
 
+  .text-comments {
+    color: inherit;
+    background-color: inherit;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #f6f5ef;
+    width: 335px;
+    gap: 58px;
+  }
 
-  
-     .text-commets {
-      color: inherit;
-        background-color: inherit;
-        border: 0;
-        outline: 0;
-        border-bottom: 1px solid #f6f5ef;
-        width: 335px;
-        gap: 58px;
-     }
-    
+  .rent-btn {
+    background-color: transparent;
+    color: #fff;
+    display: flex;
+    margin-top: 64px;
+    padding: 14px 28px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 16px;
+    border-radius: 60px;
+    border: 1px solid #f6f5ef;
+  }
 
-    .rent-btn {
-      background-color: transparent;
-      color: #fff;
-      display: flex;
-      margin-top: 64px;
-      padding: 14px 28px;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-      gap: 16px;
-      border-radius: 60px;
-      border: 1px solid #F6F5EF;
-    }
-  
-    .rent-btn:hover {
-      border: none;
-      color: #93ABAE;
-      border: 1px solid #93ABAE;
-  
-    }
-  
-    .rent-button-icon {
-      fill: #f6f5ef;
-    }
+  .rent-btn:hover {
+    border: none;
+    color: #93abae;
+    border: 1px solid #93abae;
+  }
 
-  
-
+  .rent-button-icon {
+    fill: #f6f5ef;
+  }
 }
 
-@media only screen and (min-width: 767px) {
-
-.rent-form{
-  width: 364px;
-}
+@media only screen and (min-width: 768px) {
+  .rent-form {
+    width: 364px;
+  }
   .rent-txt {
     width: 287px;
     height: 132px;
@@ -195,8 +186,7 @@
     display: flex;
   }
 
-
-  .img-box{
+  .img-box {
     margin-right: 69px;
   }
 
@@ -210,55 +200,52 @@
     height: 35px;
   }
 
-    .text-commets {
-      width: 100%;
-      width: 364px;
-      color: inherit;
-      background-color: inherit;
-      height: 58px;
-      resize: none;
-      border: 0;
-      outline: 0;
-      border-bottom: 1px solid #f6f5ef;
-    }
+  .text-comments {
+    width: 100%;
+    width: 364px;
+    color: inherit;
+    background-color: inherit;
+    /* height: 58px; */
+    resize: none;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #f6f5ef;
+  }
 
-        .rent-form-row-container::after {
-          content: '';
-          width: 413px;
-            height: 413px;
-          top: 75px;
-          left: 592px;
-    
-          background: #91AFBA;
-          opacity: 0.6000000238418579;
-          position: absolute;
-          border-radius: 413px;
-          filter: blur(100px);
-          transform: rotate(-44.094deg);
-          z-index: -1;
-        }
+  .rent-form-row-container::after {
+    content: '';
+    width: 413px;
+    height: 413px;
+    top: 75px;
+    left: 592px;
+    background: #91afba;
+    opacity: 0.6000000238418579;
+    position: absolute;
+    border-radius: 413px;
+    filter: blur(100px);
+    transform: rotate(-44.094deg);
+    z-index: -1;
+  }
 
   .rent-btn {
-      background-color: transparent;
-      color: #fff;
-      display: flex;
-      margin-top: 64px;
-      padding: 14px 28px;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-      gap: 16px;
-      border-radius: 60px;
-      border: 1px solid #F6F5EF;
-    }
-  
-    .rent-btn:hover {
-      border: none;
-      color: #93ABAE;
-      border: 1px solid #93ABAE;
-  
-    }
-  
+    background-color: transparent;
+    color: #fff;
+    display: flex;
+    margin-top: 64px;
+    padding: 14px 28px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 16px;
+    border-radius: 60px;
+    border: 1px solid #f6f5ef;
+  }
+
+  .rent-btn:hover {
+    border: none;
+    color: #93abae;
+    border: 1px solid #93abae;
+  }
 
   .rent-yacht-input::placeholder,
   .rent-yacht-textarea::placeholder {
@@ -267,7 +254,6 @@
     letter-spacing: -0.045em;
     color: #f6f5ef;
   }
-
 
   .rent-button-icon {
     fill: #f6f5ef;
@@ -279,13 +265,12 @@
   .rent-container {
     padding-left: 183px;
     padding-right: 183px;
-    
   }
-  .rent-box{
+  .rent-box {
     display: inline-flex;
-      justify-content: center;
-      align-items: flex-end;
-      gap: 188px;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 188px;
   }
 
   .rent-yacht-section {
@@ -303,10 +288,9 @@
     letter-spacing: -0.045em;
     margin-bottom: 64px;
   }
-  
 
   .rent-form-row,
-  .text-commets {
+  .text-comments {
     margin-top: 9px;
     width: 443px;
     gap: 28px;
@@ -338,55 +322,52 @@
     letter-spacing: -0.045em;
   }
 
-  .text-commets{
+  .text-commets {
     width: 100%;
     color: inherit;
     background-color: inherit;
-    
+
     height: 58px;
     resize: none;
     border: 0;
     outline: 0;
     border-bottom: 1px solid #f6f5ef;
   }
-        /* .rent-form-row-container::after {
-          content: '';
-          width: 414px;
-          height: 414px;
-          top: 4668px;
-          left: 985px;
-         
-          background: #91AFBA;
-          opacity: 0.6000000238418579;
-          position:absolute;
-          border-radius: 414px;
-          filter: blur(100px);
-          transform: rotate(-45.074deg);
-          z-index: -1;
-        } */
+  /* .rent-form-row-container::after {
+    content: '';
+    width: 414px;
+    height: 414px;
+    top: 4668px;
+    left: 985px;
 
-  
-    .rent-btn {
-      background-color: transparent;
-      color: #fff;
-      display: flex;
-      margin-top: 64px;
-      padding: 14px 28px;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-      gap: 16px;
-      border-radius: 60px;
-      border: 1px solid #F6F5EF;
-    }
-  
-    .rent-btn:hover {
-      border: none;
-      color: #93ABAE;
-      border: 1px solid #93ABAE;
-  
-    }
+    background: #91afba;
+    opacity: 0.6000000238418579;
+    position: absolute;
+    border-radius: 414px;
+    filter: blur(100px);
+    transform: rotate(-45.074deg);
+    z-index: -1;
+  } */
 
+  .rent-btn {
+    background-color: transparent;
+    color: #fff;
+    display: flex;
+    margin-top: 64px;
+    padding: 14px 28px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 16px;
+    border-radius: 60px;
+    border: 1px solid #f6f5ef;
+  }
+
+  .rent-btn:hover {
+    border: none;
+    color: #93abae;
+    border: 1px solid #93abae;
+  }
 
   .rent-button-icon {
     fill: #f6f5ef;

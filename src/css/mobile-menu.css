@@ -1,3 +1,7 @@
+.menu-container {
+  overflow: hidden;
+}
+
 .menu-container-div {
   min-width: 280px;
   max-width: 335px;
@@ -97,7 +101,7 @@
   opacity: 0.9;
   background: #939cac;
   bottom: -140px;
-  right: -14px;
+  right: -15px;
 }
 
 .shadow-one,

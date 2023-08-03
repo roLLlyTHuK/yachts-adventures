@@ -1,6 +1,6 @@
 #scrollToTopButton {
   position: fixed;
-  z-index: 999;
+  z-index: 35;
   bottom: 62px;
   right: 20px;
 

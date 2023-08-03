@@ -61,22 +61,6 @@
   font-size: 12px;
 }
 
-.rent-form-row-container::after {
-  content: '';
-  width: 283px;
-  height: 283px;
-  top: 400px;
-  left: 192px;
-
-  background: #91afba;
-  opacity: 0.6000000238418579;
-  position: absolute;
-  border-radius: 283px;
-  filter: blur(100px);
-  transform: rotate(-44.916deg);
-  z-index: -1;
-}
-
 @media only screen and (min-width: 320px) {
   .rent-box {
     margin-bottom: 24px;
@@ -104,7 +88,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
-    width: 335px;
+    max-width: 335px;
   }
 
   .rent-yacht-input {
@@ -113,7 +97,8 @@
     border: 0;
     outline: 0;
     border-bottom: 1px solid #f6f5ef;
-    width: 335px;
+    max-width: 335px;
+
     height: 35px;
     gap: 16px;
   }
@@ -132,7 +117,8 @@
     border: 0;
     outline: 0;
     border-bottom: 1px solid #f6f5ef;
-    width: 335px;
+    max-width: 335px;
+
     gap: 58px;
   }
 
@@ -182,7 +168,7 @@
     width: 364px;
   }
 
-  .rent-container {
+  .rent-box-all {
     display: flex;
   }
 
@@ -210,21 +196,6 @@
     border: 0;
     outline: 0;
     border-bottom: 1px solid #f6f5ef;
-  }
-
-  .rent-form-row-container::after {
-    content: '';
-    width: 413px;
-    height: 413px;
-    top: 75px;
-    left: 592px;
-    background: #91afba;
-    opacity: 0.6000000238418579;
-    position: absolute;
-    border-radius: 413px;
-    filter: blur(100px);
-    transform: rotate(-44.094deg);
-    z-index: -1;
   }
 
   .rent-btn {
@@ -262,7 +233,7 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .rent-container {
+  .rent-box-all {
     padding-left: 183px;
     padding-right: 183px;
   }
@@ -333,21 +304,6 @@
     outline: 0;
     border-bottom: 1px solid #f6f5ef;
   }
-  /* .rent-form-row-container::after {
-    content: '';
-    width: 414px;
-    height: 414px;
-    top: 4668px;
-    left: 985px;
-
-    background: #91afba;
-    opacity: 0.6000000238418579;
-    position: absolute;
-    border-radius: 414px;
-    filter: blur(100px);
-    transform: rotate(-45.074deg);
-    z-index: -1;
-  } */
 
   .rent-btn {
     background-color: transparent;
@@ -372,5 +328,45 @@
   .rent-button-icon {
     fill: #f6f5ef;
     margin-left: 16px;
+  }
+}
+
+.rent-yacht-section {
+  overflow: hidden;
+}
+
+.rent-container {
+  position: relative;
+}
+
+.rent-spot {
+  position: absolute;
+  top: 400px;
+  left: 212px;
+  width: 283px;
+  height: 283px;
+  transform: rotate(-45deg);
+  border-radius: 50%;
+  opacity: 0.6;
+  background: #91afba;
+  z-index: -3;
+  filter: blur(100px);
+}
+@media only screen and (min-width: 768px) {
+  .rent-spot {
+    top: 75px;
+    left: 623px;
+    width: 413px;
+    height: 413px;
+    border-radius: 413px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .rent-spot {
+    top: 115px;
+    left: 919px;
+    width: 414px;
+    height: 414px;
+    border-radius: 414px;
   }
 }

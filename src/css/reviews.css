@@ -1,19 +1,20 @@
 .adventures {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  overflow: hidden;
 }
 
 @media only screen and (min-width: 768px) {
   .adventures {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 14px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .adventures {
-    padding-top: 164px;
-    padding-bottom: 164px;
+    padding-top: 82px;
+    padding-bottom: 33px;
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -23,6 +24,10 @@
     align-items: center;
     margin-bottom: 64px;
   }
+}
+
+.reviews-container {
+  position: relative;
 }
 
 .img-adventures {
@@ -269,23 +274,8 @@
     width: 100%;
   }
 }
-@media only screen and (min-width: 375px) {
-  .adventures {
-    padding-top: 40px;
-    padding-bottom: 80px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .adventures {
-    padding-top: 50px;
-    padding-bottom: 100px;
-  }
-}
+
 @media only screen and (min-width: 1280px) {
-  .adventures {
-    padding-top: 82px;
-    padding-bottom: 164px;
-  }
   .swiper-pagination {
     display: none;
   }
@@ -310,3 +300,33 @@
   top: unset;
   bottom: 35px;
 }
+
+/* .reviews-spot {
+  position: absolute;
+  top: -276px;
+  left: 212px;
+  width: 283px;
+  height: 283px;
+  transform: rotate(-45deg);
+  border-radius: 50%;
+  opacity: 0.6;
+  background: #91afba;
+  z-index: -3;
+  filter: blur(100px);
+}
+@media only screen and (min-width: 768px) {
+  .reviews-spot {
+    top: -376px;
+    left: 623px;
+    width: 413px;
+    height: 413px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .reviews-spot {
+    top: -463px;
+    left: 919px;
+    width: 414px;
+    height: 414px;
+  }
+} */

@@ -79,10 +79,14 @@
 }
 .yacht-title-box::after {
   top: -29px;
-  left: 138px;
-  width: 195px;
-  height: 195px;
+  left: 114px;
+  width: 161px;
+  height: 161px;
   opacity: 3;
+}
+@media only screen and (max-width: 374px) {
+  yacht-title-box::after {
+  }
 }
 
 /*============================|gallery|===========================*/

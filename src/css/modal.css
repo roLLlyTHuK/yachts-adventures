@@ -43,10 +43,18 @@
   height: 142px;
   border-radius: 50%;
   transform: rotate(-45.074deg);
-  fill: #91afba;
+  background-color: #91afba;
   opacity: 0.6;
   z-index: -1;
   filter: blur(100px);
+}
+@media only screen and (min-width: 768px) {
+  .modal::after {
+    top: 65px;
+    left: 152px;
+    width: 265px;
+    height: 265px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
